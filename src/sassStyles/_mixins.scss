@@ -1,0 +1,14 @@
+// This page contains site-wide Sass variables
+
+// Formats
+@mixin borderStyle {
+    border: 3px solid $colorBorder;
+    border-radius: 10px;
+}
+
+@mixin btnTxtStyle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}

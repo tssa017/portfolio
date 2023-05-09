@@ -1,0 +1,19 @@
+// This page contains site-wide Sass styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+    color: $colorBorder;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: $colorBorder;
+}

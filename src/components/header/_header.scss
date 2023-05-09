@@ -1,0 +1,13 @@
+// This page contains site-wide responsive Sass header styles
+
+.header {
+    padding: 1rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.2rem solid $colorBorder;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 900;
+}
