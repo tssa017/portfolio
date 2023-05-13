@@ -1,0 +1,16 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+    .fa-brands {
+        font-size: 3rem;
+
+        &:hover {
+            color: $colorTertiary;
+            transition: 250ms;
+        }
+    }
+}

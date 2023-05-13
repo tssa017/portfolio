@@ -1,0 +1,26 @@
+// Mobile styles
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem 3rem 3rem 3rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 2.6rem;
+    }
+
+    strong {
+        font-weight: 900;
+        font-style: italic;
+    }
+}
+
+// Tablet and PC styles
+@media screen and (min-width: 768px) {
+    .title {
+        &__heading {
+            width: 60%;
+        }
+    }
+}
