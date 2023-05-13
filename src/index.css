@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;0,1000;1,300;1,400;1,500;1,600;1,1000&display=swap");
+@import url(" https: ; //fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;0,1000;1,300;1,400;1,500;1,600;1,1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +26,7 @@ a {
   align-items: center;
   border-bottom: 0.2rem solid #3d3c3c;
   width: 100%;
+  background-color: #f6ddff;
   font-size: 3rem;
   font-weight: 900;
 }
@@ -39,6 +40,103 @@ a {
   border-top: 0.2rem solid #3d3c3c;
   width: 100%;
   font-size: 1rem;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 1.5rem;
+}
+.bio__img {
+  width: 200px;
+  height: auto;
+}
+.bio__para {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.bio__btn {
+  padding: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 3px solid #3d3c3c;
+  border-radius: 10px;
+  padding: 1.2rem;
+  background-color: #fff;
+}
+.bio__btn:hover {
+  background-color: #f6ddff;
+  transition: 250ms;
+}
+
+@media screen and (min-width: 768px) {
+  .bio__para {
+    width: 70%;
+  }
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.card {
+  border: 3px solid #3d3c3c;
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+.card__heading {
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+}
+.card__para {
+  font-size: 1.2rem;
+}
+.card:hover {
+  background-color: #f6ddff;
+  transition: 250ms;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.socials .fa-brands {
+  font-size: 3rem;
+}
+.socials .fa-brands:hover {
+  color: #504d92;
+  transition: 250ms;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5rem 3rem 3rem 3rem;
+}
+.title__heading {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.title strong {
+  font-weight: 900;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .title__heading {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
