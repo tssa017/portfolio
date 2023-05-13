@@ -1,0 +1,18 @@
+.card {
+    @include borderStyle;
+    padding: 1.2rem;
+
+    &__heading {
+        font-size: 1.2rem;
+        padding-bottom: 0.3rem;
+    }
+
+    &__para {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        background-color: $colorPrimary;
+        transition: 250ms;
+    }
+}
