@@ -16,9 +16,8 @@ function Projects() {
                             <br></br> • Integrated SQL database, using{' '}
                             <strong>MySQL</strong> with{' '}
                             <strong>Sequelize.js</strong>
-                            <br></br> • API built with
-                            <strong>Node.js</strong> and{' '}
-                            <strong>Express</strong>
+                            <br></br> • API built with <strong>Node.js</strong>{' '}
+                            and <strong>Express</strong>
                             <br></br>• Front-End built with{' '}
                             <strong>React</strong> and <strong>SCSS</strong>
                         </Paragraph>
@@ -66,7 +65,7 @@ function Projects() {
                             mock-ups
                             <br></br> • Built with <strong>HTML</strong> and{' '}
                             <strong>CSS</strong>
-                            <br></br> • Conforms to <strong>WCAG3</strong>
+                            <br></br> • Conforms to <strong>WCAG3</strong>{' '}
                             standards
                         </Paragraph>
                     </Card>
