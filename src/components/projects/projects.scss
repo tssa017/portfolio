@@ -1,6 +1,14 @@
 .projects {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
     padding: 3rem;
-    gap: 2rem;
+
+    &__cards-cont {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 3rem;
+        gap: 2rem;
+    }
 }
