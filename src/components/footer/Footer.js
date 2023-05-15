@@ -1,10 +1,11 @@
 import '../../index.scss';
+import Paragraph from '../paragraph/Paragraph.js';
 
 function Footer() {
     return (
         <div>
             <footer className="footer">
-                <p>© Theressa Malone, 2023</p>
+                <Paragraph>© Theressa Malone, 2023</Paragraph>
             </footer>
         </div>
     );
