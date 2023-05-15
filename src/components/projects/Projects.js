@@ -57,7 +57,7 @@ function Projects() {
                         </Paragraph>
                     </Card>
                 </a>
-                <a href="https://main--clinquant-swan-705d1d.netlify.app/">
+                <a href="https://booki-theressa-malone.netlify.app/">
                     <Card src="images/Booki.png">
                         <h2>Booki</h2>
                         <Paragraph>
@@ -71,7 +71,7 @@ function Projects() {
                         </Paragraph>
                     </Card>
                 </a>
-                <a href="https://frolicking-platypus-c31819.netlify.app/">
+                <a href="https://ohmyfood-theressa.netlify.app/">
                     <Card src="images/Ohmyfood.png">
                         <h2>Ohmyfood</h2>
                         <Paragraph>

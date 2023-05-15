@@ -107,6 +107,7 @@ a {
   height: 320px;
   width: auto;
   margin-bottom: 1rem;
+  background-color: #fff;
 }
 .card__heading {
   font-size: 1.2rem;
