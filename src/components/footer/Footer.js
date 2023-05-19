@@ -5,7 +5,9 @@ function Footer() {
     return (
         <div>
             <footer className="footer">
-                <Paragraph>© Theressa Malone, 2023</Paragraph>
+                <Paragraph>
+                    © Theressa Malone, 2023 | Built in <strong>React</strong>
+                </Paragraph>
             </footer>
         </div>
     );
