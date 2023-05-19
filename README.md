@@ -4,7 +4,13 @@ This is my personal portfolio, built in React and CSS with Sass.
 
 ## To view the website
 
-Run the frontend server with the following command:
+Visit https://theressa-malone.netlify.app/
+
+Or,
+
+1. Clone the repository: git@github.com:tssa017/portfolio.git
+
+2. Run the frontend server with the following command:
 
 ```bash
 npm run start
