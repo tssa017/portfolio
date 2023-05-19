@@ -7,30 +7,36 @@ function Hero() {
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
                 <div className="hero">
-                    <div className="hero__main-cont">
+                    {isEnglishClicked ? (
+                        <h1 className="hero__heading">
+                            Web Developer based in Paris, France
+                        </h1>
+                    ) : (
+                        <h1 className="hero__heading">
+                            Développeuse web basé à Paris, France
+                        </h1>
+                    )}
+                    <Paragraph>
                         {isEnglishClicked ? (
-                            <h1 className="hero__main-cont--heading">
-                                Web Developer based in Paris, France
-                            </h1>
+                            <em>
+                                Current technical stack:{' '}
+                                <strong>
+                                    Node.js, MySQL, MongoDB, Sequelize,
+                                    Mongoose, Express, React, Lighthouse, SCSS,
+                                    HTML5, Visual Studio Code
+                                </strong>
+                            </em>
                         ) : (
-                            <h1 className="hero__main-cont--heading">
-                                Développeuse web basé à Paris, France
-                            </h1>
+                            <em>
+                                Stack technique actuelle :{' '}
+                                <strong>
+                                    Node.js, MySQL, MongoDB, Sequelize,
+                                    Mongoose, Express, React, Lighthouse, SCSS,
+                                    HTML5, Visual Studio Code
+                                </strong>
+                            </em>
                         )}
-                        <Paragraph>
-                            {isEnglishClicked ? (
-                                <em>
-                                    Current technical stack:{' '}
-                                    <strong>Node.js, React, SCSS, HTML5</strong>
-                                </em>
-                            ) : (
-                                <em>
-                                    Stack technique actuelle :{' '}
-                                    <strong>Node.js, React, SCSS, HTML5</strong>
-                                </em>
-                            )}
-                        </Paragraph>
-                    </div>
+                    </Paragraph>
                 </div>
             )}
         </LanguageContext.Consumer>
