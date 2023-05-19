@@ -22,7 +22,7 @@ npm run start
 
 ## For developers
 
-Compile the SCSS live with the following command:
+Compile the SCSS live with the following commands:
 
 ```bash
 cd src
