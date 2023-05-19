@@ -1,35 +1,39 @@
 import '../../index.scss';
-import FontAwesomeIcon from '../fontAwesomeIcon/FontAwesomeIcon';
+import LanguageContext from '../language/LanguageContext';
+import Paragraph from '../paragraph/Paragraph';
 
 function Hero() {
     return (
-        <div className="hero">
-            <div className="hero__main-cont">
-                <h1 className="hero__main-cont--heading">
-                    Web Developer based in Paris, France
-                </h1>
-                <p>
-                    <em>
-                        Current technical stack:{' '}
-                        <strong>Node.js, React, SCSS, HTML5</strong>
-                    </em>
-                </p>
-            </div>
-            <ul className="hero__list">
-                <li className="hero__list-item">
-                    <FontAwesomeIcon className="fa-brands fa-node hero__list-icon"></FontAwesomeIcon>
-                </li>
-                <li className="hero__list-item">
-                    <FontAwesomeIcon className="fa-brands fa-react hero__list-icon"></FontAwesomeIcon>
-                </li>
-                <li className="hero__list-item">
-                    <FontAwesomeIcon className="fa-brands fa-sass hero__list-icon"></FontAwesomeIcon>
-                </li>
-                <li className="hero__list-item">
-                    <FontAwesomeIcon className="fa-brands fa-html5 hero__list-icon"></FontAwesomeIcon>
-                </li>
-            </ul>
-        </div>
+        <LanguageContext.Consumer>
+            {({ isEnglishClicked }) => (
+                <div className="hero">
+                    <div className="hero__main-cont">
+                        {isEnglishClicked ? (
+                            <h1 className="hero__main-cont--heading">
+                                Web Developer based in Paris, France
+                            </h1>
+                        ) : (
+                            <h1 className="hero__main-cont--heading">
+                                Développeuse web basé à Paris, France
+                            </h1>
+                        )}
+                        <Paragraph>
+                            {isEnglishClicked ? (
+                                <em>
+                                    Current technical stack:{' '}
+                                    <strong>Node.js, React, SCSS, HTML5</strong>
+                                </em>
+                            ) : (
+                                <em>
+                                    Stack technique actuelle :{' '}
+                                    <strong>Node.js, React, SCSS, HTML5</strong>
+                                </em>
+                            )}
+                        </Paragraph>
+                    </div>
+                </div>
+            )}
+        </LanguageContext.Consumer>
     );
 }
 

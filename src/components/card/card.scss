@@ -2,7 +2,8 @@
     @include borderStyle;
     padding: 2rem 1rem;
     width: 360px;
-    height: 720px;
+    height: 650px;
+    scale: 1;
 
     &__img {
         @include borderStyle;
@@ -24,6 +25,7 @@
 
     &:hover {
         background-color: $colorPrimary;
-        transition: 250ms;
+        scale: 1.01;
+        transition: all 250ms;
     }
 }
