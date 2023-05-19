@@ -8,7 +8,11 @@ Visit https://theressa-malone.netlify.app/
 
 Or,
 
-1. Clone the repository: git@github.com:tssa017/portfolio.git
+1. Clone the repository with the following command:
+
+```bash
+git clone git@github.com:tssa017/portfolio.git
+```
 
 2. Run the frontend server with the following command:
 
