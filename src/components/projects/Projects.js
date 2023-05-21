@@ -28,6 +28,7 @@ function Projects() {
                                     <FontAwesomeIcon className="fa-brands fa-html5 card__icons"></FontAwesomeIcon>
                                     <FontAwesomeIcon className="fa-brands fa-css3 card__icons"></FontAwesomeIcon>
                                     <FontAwesomeIcon className="fa-brands fa-sass card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-react card__icons"></FontAwesomeIcon>
                                 </Paragraph>
                             </Card>
                         </a>
@@ -44,6 +45,7 @@ function Projects() {
                                     <FontAwesomeIcon className="fa-brands fa-html5 card__icons"></FontAwesomeIcon>
                                     <FontAwesomeIcon className="fa-brands fa-css3 card__icons"></FontAwesomeIcon>
                                     <FontAwesomeIcon className="fa-brands fa-sass card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-square-js card__icons"></FontAwesomeIcon>
                                 </Paragraph>
                             </Card>
                         </a>
@@ -56,9 +58,10 @@ function Projects() {
                                         : "J'ai optimisé ce site web en effectuant un audit d'accessibilité et de référencement à l'aide de Lighthouse. Le site est conforme aux normes WCAG3 actuelles et est entièrement responsive. J'ai réduit la taille du projet de 45,4 %"}
                                 </Paragraph>
                                 <Paragraph className="projects__cards-cont--list">
-                                    <FontAwesomeIcon className="fa-brands fa-css3 card__icons"></FontAwesomeIcon>
                                     <FontAwesomeIcon className="fa-brands fa-html5 card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-css3 card__icons"></FontAwesomeIcon>
                                     <FontAwesomeIcon className="fa-brands fa-sass card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-square-js card__icons"></FontAwesomeIcon>
                                 </Paragraph>
                             </Card>
                         </a>

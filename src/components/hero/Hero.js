@@ -16,14 +16,15 @@ function Hero() {
                             Développeuse web basé à Paris, France
                         </h1>
                     )}
-                    <Paragraph>
+                    <Paragraph className="hero__para">
                         {isEnglishClicked ? (
                             <em>
                                 Current technical stack:{' '}
                                 <strong>
                                     Node.js, MySQL, MongoDB, Sequelize,
-                                    Mongoose, Express, React, Lighthouse, SCSS,
-                                    HTML5, Visual Studio Code
+                                    Mongoose, Express, React, TypeScript,
+                                    JavaScript, Lighthouse, SCSS, HTML5,
+                                    Netlify, Visual Studio Code
                                 </strong>
                             </em>
                         ) : (
@@ -31,8 +32,9 @@ function Hero() {
                                 Stack technique actuelle :{' '}
                                 <strong>
                                     Node.js, MySQL, MongoDB, Sequelize,
-                                    Mongoose, Express, React, Lighthouse, SCSS,
-                                    HTML5, Visual Studio Code
+                                    Mongoose, Express, React, TypeScript,
+                                    JavaScript, Lighthouse, SCSS, HTML5,
+                                    Netlify, Visual Studio Code
                                 </strong>
                             </em>
                         )}
