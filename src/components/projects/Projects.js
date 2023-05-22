@@ -15,7 +15,10 @@ function Projects() {
                         <h2>Découvrez mes projets !</h2>
                     )}
                     <div className="projects__cards-cont">
-                        <a href="https://github.com/tssa017/groupomania">
+                        <a
+                            href="https://github.com/tssa017/groupomania"
+                            target="blank"
+                        >
                             <Card src="images/Groupomania.png">
                                 <h2>Groupomania</h2>
                                 <Paragraph>
@@ -32,7 +35,7 @@ function Projects() {
                                 </Paragraph>
                             </Card>
                         </a>
-                        <a href="https://glowgirls.co.nz/">
+                        <a href="https://glowgirls.co.nz/" target="blank">
                             <Card src="images/Glow_girls.png">
                                 <h2>Glow Girls</h2>
                                 <Paragraph>
@@ -49,7 +52,10 @@ function Projects() {
                                 </Paragraph>
                             </Card>
                         </a>
-                        <a href="http://www.wulfman-corporation.com/">
+                        <a
+                            href="http://www.wulfman-corporation.com/"
+                            target="blank"
+                        >
                             <Card src="images/Wulfman_corporation.png">
                                 <h2>Wulfman Corporation</h2>
                                 <Paragraph>
@@ -65,13 +71,16 @@ function Projects() {
                                 </Paragraph>
                             </Card>
                         </a>
-                        <a href="https://booki-theressa-malone.netlify.app/">
+                        <a
+                            href="https://booki-theressa-malone.netlify.app/"
+                            target="blank"
+                        >
                             <Card src="images/Booki.png">
                                 <h2>Booki</h2>
                                 <Paragraph>
                                     {isEnglishClicked
-                                        ? 'A responsive, accessible website integrated from mock-ups. Built with HTML and CSS.'
-                                        : 'Un site web accessible et réactif, intégré à partir de maquettes. Construit avec HTML et CSS.'}
+                                        ? 'A responsive, accessible, static website integrated from mock-ups. Built with HTML and CSS.'
+                                        : 'Un site web statique, responsive et accessible, intégré à partir de maquettes. Construit avec HTML et CSS.'}
                                 </Paragraph>
                                 <Paragraph className="projects__cards-cont--list">
                                     <FontAwesomeIcon className="fa-brands fa-html5 card__icons"></FontAwesomeIcon>
@@ -80,13 +89,16 @@ function Projects() {
                                 </Paragraph>
                             </Card>
                         </a>
-                        <a href="https://ohmyfood-theressa.netlify.app/">
+                        <a
+                            href="https://ohmyfood-theressa.netlify.app/"
+                            target="blank"
+                        >
                             <Card src="images/Ohmyfood.png">
                                 <h2>Ohmyfood</h2>
                                 <Paragraph>
                                     {isEnglishClicked
-                                        ? 'A responsive, accessible website integrated from mock-ups. Built with HTML and SCSS, including CSS animations.'
-                                        : 'Un site web responsive, accessible et intégré à partir de maquettes. Construit en HTML et SCSS, avec des animations CSS.'}
+                                        ? 'A responsive, accessible, static website integrated from mock-ups. Built with HTML and SCSS, including CSS animations.'
+                                        : 'Un site web statique, responsive et accessible, intégré à partir de maquettes. Construit en HTML et SCSS, avec des animations CSS.'}
                                 </Paragraph>
                                 <Paragraph className="projects__cards-cont--list">
                                     <FontAwesomeIcon className="fa-brands fa-html5 card__icons"></FontAwesomeIcon>
