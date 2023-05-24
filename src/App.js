@@ -74,34 +74,36 @@ function App() {
                             </List>
                         )}
                     </nav>
-                    <div className="socials">
-                        <a href="https://github.com/tssa017">
-                            <FontAwesomeIcon className="fa-brands fa-github socials-link"></FontAwesomeIcon>
-                        </a>
-                        <a href="https://www.linkedin.com/in/theressamalone/">
-                            <FontAwesomeIcon className="fa-brands fa-linkedin socials-link"></FontAwesomeIcon>
-                        </a>
+                    <div className="language__flex-item">
+                        <div className="socials">
+                            <a href="https://github.com/tssa017">
+                                <FontAwesomeIcon className="fa-brands fa-github socials-link"></FontAwesomeIcon>
+                            </a>
+                            <a href="https://www.linkedin.com/in/theressamalone/">
+                                <FontAwesomeIcon className="fa-brands fa-linkedin socials-link"></FontAwesomeIcon>
+                            </a>
+                        </div>
+                        {!isEnglishClicked && (
+                            <Button
+                                className="language__btn"
+                                id="language__btn--en"
+                                onClick={handleEnglishClick}
+                                aria-label="Read page content in English"
+                            >
+                                🇬🇧
+                            </Button>
+                        )}
+                        {!isFrenchClicked && (
+                            <Button
+                                className="language__btn"
+                                id="language__btn--fr"
+                                onClick={handleFrenchClick}
+                                aria-label="Read page content in French"
+                            >
+                                🇫🇷
+                            </Button>
+                        )}
                     </div>
-                    {!isEnglishClicked && (
-                        <Button
-                            className="language__btn"
-                            id="language__btn--en"
-                            onClick={handleEnglishClick}
-                            aria-label="Read page content in English"
-                        >
-                            🇬🇧
-                        </Button>
-                    )}
-                    {!isFrenchClicked && (
-                        <Button
-                            className="language__btn"
-                            id="language__btn--fr"
-                            onClick={handleFrenchClick}
-                            aria-label="Read page content in French"
-                        >
-                            🇫🇷
-                        </Button>
-                    )}
                 </div>
                 <Hero />
                 <Bio />
