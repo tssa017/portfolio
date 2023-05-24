@@ -8,11 +8,15 @@ function Projects() {
     return (
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
-                <div className="projects">
+                <div className="projects" id="projects">
                     {isEnglishClicked ? (
-                        <h2>Check out my projects!</h2>
+                        <h2 className="projects__heading">
+                            Check out some of my projects!
+                        </h2>
                     ) : (
-                        <h2>Découvrez mes projets !</h2>
+                        <h2 className="projects__heading">
+                            Découvrez mes projets !
+                        </h2>
                     )}
                     <div className="projects__cards-cont">
                         <a

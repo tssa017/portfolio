@@ -4,6 +4,10 @@
     justify-content: center;
     padding: 3rem;
 
+    &__heading {
+        text-align: center;
+    }
+
     &__cards-cont {
         display: flex;
         flex-flow: row wrap;

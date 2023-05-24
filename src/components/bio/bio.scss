@@ -1,5 +1,6 @@
 // This page contains site-wide responsive Sass bio styles
 
+// Mobile styles
 .bio {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
     &__para {
         font-size: 1.3rem;
         font-weight: 700;
+        padding-bottom: 2rem;
     }
 
     &__btn {
@@ -26,6 +28,17 @@
         &:hover {
             background-color: $colorPrimary;
             transition: 250ms;
+        }
+    }
+}
+
+// Tablet and PC styles
+@media screen and (min-width: 768px) {
+    .bio {
+        &__para {
+            font-size: 1.3rem;
+            font-weight: 700;
+            width: 800px;
         }
     }
 }

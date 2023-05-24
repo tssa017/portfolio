@@ -10,6 +10,7 @@ import { useState } from 'react';
 
 // Components
 import Header from './components/header/Header';
+import List from './components/list/List';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
 import Projects from './components/projects/Projects';
@@ -45,6 +46,34 @@ function App() {
                 <Header />
                 {/* Set site language on button click */}
                 <div className="language">
+                    <nav className="nav">
+                        {isEnglishClicked && (
+                            <List className="nav__list">
+                                <a href="#hero">
+                                    <li>Tech stack</li>
+                                </a>
+                                <a href="#bio">
+                                    <li>About</li>
+                                </a>
+                                <a href="#projects">
+                                    <li>Projects</li>
+                                </a>
+                            </List>
+                        )}{' '}
+                        {isFrenchClicked && (
+                            <List className="nav__list">
+                                <a href="#hero">
+                                    <li>Stack technique</li>
+                                </a>
+                                <a href="#bio">
+                                    <li>À propos</li>
+                                </a>
+                                <a href="#projects">
+                                    <li>Projets</li>
+                                </a>
+                            </List>
+                        )}
+                    </nav>
                     <div className="socials">
                         <a href="https://github.com/tssa017">
                             <FontAwesomeIcon className="fa-brands fa-github socials-link"></FontAwesomeIcon>

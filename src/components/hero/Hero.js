@@ -1,12 +1,13 @@
 import '../../index.scss';
 import LanguageContext from '../language/LanguageContext';
 import Paragraph from '../paragraph/Paragraph';
+import List from '../list/List';
 
 function Hero() {
     return (
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
-                <div className="hero">
+                <div className="hero" id="hero">
                     {isEnglishClicked ? (
                         <h1 className="hero__heading">
                             Web Developer based in Paris, France
@@ -16,29 +17,28 @@ function Hero() {
                             Développeuse web basé à Paris, France
                         </h1>
                     )}
-                    <Paragraph className="hero__para">
-                        {isEnglishClicked ? (
-                            <em>
-                                Current technical stack:{' '}
-                                <strong>
-                                    Node.js, MySQL, MongoDB, Sequelize,
-                                    Mongoose, Express, React, TypeScript,
-                                    JavaScript, Lighthouse, SCSS, HTML5,
-                                    Netlify, Visual Studio Code
-                                </strong>
-                            </em>
-                        ) : (
-                            <em>
-                                Stack technique actuelle :{' '}
-                                <strong>
-                                    Node.js, MySQL, MongoDB, Sequelize,
-                                    Mongoose, Express, React, TypeScript,
-                                    JavaScript, Lighthouse, SCSS, HTML5,
-                                    Netlify, Visual Studio Code
-                                </strong>
-                            </em>
-                        )}
+                    <Paragraph className="hero__stack-heading">
+                        {' '}
+                        {isEnglishClicked
+                            ? 'Current technical stack:'
+                            : 'Stack technique actuelle :'}
                     </Paragraph>
+                    <List className="hero__stack-list">
+                        <li>Node.js</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Sequelize</li>
+                        <li>Mongoose</li>
+                        <li>Express</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>Lighthouse</li>
+                        <li>SCSS</li>
+                        <li>HTML5</li>
+                        <li>Netlify</li>
+                        <li>Visual Studio Code</li>
+                    </List>
                 </div>
             )}
         </LanguageContext.Consumer>

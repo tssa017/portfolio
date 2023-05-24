@@ -7,7 +7,7 @@ function Bio() {
     return (
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
-                <div className="bio">
+                <div className="bio" id="bio">
                     <img
                         src="images/avatar.png"
                         className="bio__img"

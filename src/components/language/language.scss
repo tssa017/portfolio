@@ -23,6 +23,10 @@
     }
 }
 
+.nav {
+    display: none;
+}
+
 .socials {
     display: flex;
     flex-direction: row;
@@ -44,5 +48,19 @@
 @media screen and (min-width: 768px) {
     .language {
         justify-content: flex-end;
+    }
+
+    .nav {
+        display: flex;
+
+        &__list {
+            list-style-type: none;
+            list-style: none;
+        }
+
+        li {
+            padding: 0 2rem;
+            display: inline-block;
+        }
     }
 }
