@@ -29,7 +29,7 @@ function Hero() {
                                 <strong>
                                     {isEnglishClicked
                                         ? 'Front-End:'
-                                        : 'Frontend :'}
+                                        : 'Front-End :'}
                                 </strong>
                             </li>
                             <li>JavaScript / TypeScript</li>
