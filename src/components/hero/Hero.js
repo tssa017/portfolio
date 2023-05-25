@@ -23,22 +23,46 @@ function Hero() {
                             ? 'Current technical stack:'
                             : 'Stack technique actuelle :'}
                     </Paragraph>
-                    <List className="hero__stack-list">
-                        <li>Node.js</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>Sequelize</li>
-                        <li>Mongoose</li>
-                        <li>Express</li>
-                        <li>React</li>
-                        <li>TypeScript</li>
-                        <li>JavaScript</li>
-                        <li>Lighthouse</li>
-                        <li>SCSS</li>
-                        <li>HTML5</li>
-                        <li>Netlify</li>
-                        <li>Visual Studio Code</li>
-                    </List>
+                    <div className="hero__stack-cont">
+                        <List className="hero__stack-list">
+                            <li>
+                                <strong>
+                                    {isEnglishClicked
+                                        ? 'Front-End:'
+                                        : 'Frontend :'}
+                                </strong>
+                            </li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>React</li>
+                            <li>CSS3 / SCSS / Tailwind</li>
+                            <li>HTML5</li>
+                        </List>
+                        <List className="hero__stack-list">
+                            <li>
+                                <strong>
+                                    {isEnglishClicked
+                                        ? 'Back-End:'
+                                        : 'Back-End :'}
+                                </strong>
+                            </li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MySQL / Sequelize</li>
+                            <li>MongoDB / Mongoose</li>
+                        </List>
+                        <List className="hero__stack-list">
+                            <li>
+                                <strong>
+                                    {isEnglishClicked
+                                        ? 'Ecosystem:'
+                                        : 'Ecosystem :'}
+                                </strong>
+                            </li>
+                            <li>Visual Studio Code</li>
+                            <li>GitHub / GitLab</li>
+                            <li>Netlify</li>
+                        </List>
+                    </div>
                 </div>
             )}
         </LanguageContext.Consumer>

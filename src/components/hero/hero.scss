@@ -12,8 +12,14 @@
     }
 
     &__stack-heading {
-        margin-top: 1rem;
+        margin-top: 2rem;
         font-weight: 700;
+    }
+
+    &__stack-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     &__stack-list {
@@ -32,12 +38,18 @@
             align-self: center;
         }
 
+        &__stack-cont {
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+        }
+
         &__stack-heading {
             align-self: center;
         }
 
         &__stack-list {
-            align-self: center;
+            height: 320px;
         }
     }
 }

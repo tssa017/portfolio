@@ -60,12 +60,16 @@
 
         &__list {
             list-style-type: none;
-            list-style: none;
         }
 
         li {
             padding: 0 2rem;
             display: inline-block;
+
+            &:hover {
+                color: $colorTertiary;
+                transition: 250ms ease-in-out;
+            }
         }
     }
 }
