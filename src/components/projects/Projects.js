@@ -20,6 +20,26 @@ function Projects() {
                     )}
                     <div className="projects__cards-cont">
                         <a
+                            href="https://milly-magazine.netlify.app/"
+                            target="blank"
+                        >
+                            <Card src="images/milly_logo.svg">
+                                <h2>Milly Magazine</h2>
+                                <Paragraph>
+                                    {isEnglishClicked
+                                        ? 'An online literary magazine I designed with Figma. Built with React, SCSS, and Tailwind.'
+                                        : "Un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec React, SCSS, et Tailwind."}
+                                </Paragraph>
+                                <Paragraph className="projects__cards-cont--list">
+                                    <FontAwesomeIcon className="fa-brands fa-figma card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-html5 card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-css3 card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-sass card__icons"></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="fa-brands fa-react card__icons"></FontAwesomeIcon>
+                                </Paragraph>
+                            </Card>
+                        </a>
+                        <a
                             href="https://github.com/tssa017/groupomania"
                             target="blank"
                         >
