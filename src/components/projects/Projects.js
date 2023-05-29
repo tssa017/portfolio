@@ -27,8 +27,8 @@ function Projects() {
                                 <h2>Milly Magazine</h2>
                                 <Paragraph>
                                     {isEnglishClicked
-                                        ? 'In construction: An online literary magazine I designed with Figma. Built with React, SCSS, and Tailwind.'
-                                        : "En cours de construction : Un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec React, SCSS, et Tailwind."}
+                                        ? 'In construction: an online literary magazine I designed with Figma. Built with React, SCSS, and Tailwind.'
+                                        : "En cours de construction : un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec React, SCSS, et Tailwind."}
                                 </Paragraph>
                                 <Paragraph className="projects__cards-cont--list">
                                     <FontAwesomeIcon className="fa-brands fa-figma card__icons"></FontAwesomeIcon>
