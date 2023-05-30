@@ -166,12 +166,10 @@ a {
   border-radius: 10px;
   padding: 1.2rem;
   background-color: #e3e4fd;
-  scale: 1;
 }
 .bio__btn:hover {
-  scale: 1.05;
   background-color: #f6ddff;
-  transition: all 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -232,6 +230,9 @@ a {
 }
 .card__para {
   font-size: 1rem;
+}
+.card__icons {
+  align-self: flex-start;
 }
 .card:hover {
   background-color: #f6ddff;

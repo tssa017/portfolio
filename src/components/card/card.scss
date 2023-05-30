@@ -28,6 +28,10 @@
         font-size: 1rem;
     }
 
+    &__icons {
+        align-self: flex-start;
+    }
+
     &:hover {
         background-color: $colorPrimary;
         transition: 250ms ease-in-out;
