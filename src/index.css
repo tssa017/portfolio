@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -153,7 +154,7 @@ a {
 .bio__para {
   font-size: 1.3rem;
   font-weight: 700;
-  padding-bottom: 2rem;
+  padding: 0.5rem 0.8rem 2rem 0.8rem;
 }
 .bio__btn {
   padding: 0.5rem;
@@ -184,7 +185,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 .projects__heading {
   text-align: center;
@@ -193,12 +194,12 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem;
   gap: 2rem;
 }
 .projects__cards-cont--list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   padding-top: 1.5rem;
 }
@@ -209,29 +210,28 @@ a {
 .card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border: 3px solid #3d3c3c;
   border-radius: 10px;
   padding: 2rem 1rem;
-  width: 360px;
-  height: 700px;
+  height: 600px;
   scale: 1;
 }
 .card__img {
   border: 3px solid #3d3c3c;
   border-radius: 10px;
-  height: 320px;
-  width: auto;
+  height: auto;
+  width: 250px;
   margin-bottom: 1rem;
   background-color: #fff;
 }
 .card__heading {
+  align-self: flex-start;
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
-  text-align: center;
 }
 .card__para {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .card:hover {
   background-color: #f6ddff;
@@ -239,6 +239,20 @@ a {
   transition: all 250ms;
 }
 
+@media screen and (min-width: 768px) {
+  .card {
+    width: 360px;
+  }
+  .card__img {
+    width: 320px;
+  }
+  .card__heading {
+    font-size: 1.2rem;
+  }
+  .card__para {
+    font-size: 1.2rem;
+  }
+}
 .footer {
   padding: 1rem 3rem 1rem 3rem;
   display: flex;

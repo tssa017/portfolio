@@ -103,7 +103,7 @@ function Projects() {
                                 <h2>Booki</h2>
                                 <Paragraph>
                                     {isEnglishClicked
-                                        ? 'A responsive, accessible, static website integrated from mock-ups. Built with HTML and CSS.'
+                                        ? 'A responsive, accessible, static website integrated from mock-ups. Built with HTML and CSS3.'
                                         : 'Un site web statique, responsive et accessible, intégré à partir de maquettes. Construit avec HTML et CSS.'}
                                 </Paragraph>
                                 <Paragraph className="projects__cards-cont--list">

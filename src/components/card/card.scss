@@ -1,34 +1,55 @@
+// This page contains site-wide responsive Sass card styles
+
+// Mobile styles
 .card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     @include borderStyle;
     padding: 2rem 1rem;
-    width: 360px;
-    height: 700px;
+    height: 600px;
     scale: 1;
 
     &__img {
         @include borderStyle;
-        height: 320px;
-        width: auto;
+        height: auto;
+        width: 250px;
         margin-bottom: 1rem;
         background-color: #fff;
     }
 
     &__heading {
+        align-self: flex-start;
         font-size: 1.2rem;
         padding-bottom: 0.5rem;
-        text-align: center;
     }
 
     &__para {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     &:hover {
         background-color: $colorPrimary;
         scale: 1.01;
         transition: all 250ms;
+    }
+}
+
+// Tablet and PC styles
+@media screen and (min-width: 768px) {
+    .card {
+        width: 360px;
+
+        &__img {
+            width: 320px;
+        }
+
+        &__heading {
+            font-size: 1.2rem;
+        }
+
+        &__para {
+            font-size: 1.2rem;
+        }
     }
 }

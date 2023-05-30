@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 3rem;
+    padding: 1rem;
 
     &__heading {
         text-align: center;
@@ -12,12 +12,12 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        padding: 3rem;
+        padding: 2rem;
         gap: 2rem;
 
         &--list {
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
             gap: 1rem;
             padding-top: 1.5rem;
         }
