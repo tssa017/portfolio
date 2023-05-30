@@ -7,13 +7,13 @@
     align-items: center;
     @include borderStyle;
     padding: 2rem 1rem;
-    height: 600px;
-    scale: 1;
+    height: 700px;
+    width: 275px;
 
     &__img {
         @include borderStyle;
         height: auto;
-        width: 250px;
+        width: 320px;
         margin-bottom: 1rem;
         background-color: #fff;
     }
@@ -30,8 +30,7 @@
 
     &:hover {
         background-color: $colorPrimary;
-        scale: 1.01;
-        transition: all 250ms;
+        transition: 250ms ease-in-out;
     }
 }
 
@@ -40,9 +39,9 @@
     .card {
         width: 360px;
 
-        &__img {
-            width: 320px;
-        }
+        // &__img {
+        //     width: 320px;
+        // }
 
         &__heading {
             font-size: 1.2rem;
