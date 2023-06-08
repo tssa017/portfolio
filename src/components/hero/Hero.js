@@ -1,7 +1,6 @@
 import '../../index.scss';
 import LanguageContext from '../language/LanguageContext';
 import Paragraph from '../paragraph/Paragraph';
-import List from '../list/List';
 
 function Hero() {
     return (
@@ -24,7 +23,7 @@ function Hero() {
                             : 'Stack technique actuelle :'}
                     </Paragraph>
                     <div className="hero__stack-cont">
-                        <List className="hero__stack-list">
+                        <ul className="hero__stack-list">
                             <li>
                                 <strong>
                                     {isEnglishClicked
@@ -32,12 +31,13 @@ function Hero() {
                                         : 'Front-End :'}
                                 </strong>
                             </li>
+                            <li>CSS3 / SCSS / Tailwind CSS</li>
+                            <li>HTML5</li>
                             <li>JavaScript / TypeScript</li>
                             <li>React</li>
-                            <li>CSS3 / SCSS / Tailwind</li>
-                            <li>HTML5</li>
-                        </List>
-                        <List className="hero__stack-list">
+                            <li>Next.js</li>
+                        </ul>
+                        <ul className="hero__stack-list">
                             <li>
                                 <strong>
                                     {isEnglishClicked
@@ -49,8 +49,8 @@ function Hero() {
                             <li>Express</li>
                             <li>MySQL / Sequelize</li>
                             <li>MongoDB / Mongoose</li>
-                        </List>
-                        <List className="hero__stack-list">
+                        </ul>
+                        <ul className="hero__stack-list">
                             <li>
                                 <strong>
                                     {isEnglishClicked
@@ -61,7 +61,7 @@ function Hero() {
                             <li>Visual Studio Code</li>
                             <li>GitHub / GitLab</li>
                             <li>Netlify</li>
-                        </List>
+                        </ul>
                     </div>
                 </div>
             )}

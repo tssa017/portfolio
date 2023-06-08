@@ -1,3 +1,5 @@
+// This page contains site-wide responsive Sass projects styles
+
 .projects {
     display: flex;
     flex-flow: row wrap;
@@ -14,16 +16,5 @@
         justify-content: center;
         padding: 2rem;
         gap: 2rem;
-
-        &--list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            padding-top: 1.5rem;
-        }
-    }
-
-    .fa-brands {
-        font-size: 2.5rem;
     }
 }
