@@ -10,9 +10,9 @@ import { useState } from 'react';
 
 // Components
 import Header from './components/header/Header';
-import List from './components/list/List';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
+import Form from './components/form/Form';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
@@ -48,7 +48,7 @@ function App() {
                 <div className="language">
                     <nav className="nav">
                         {isEnglishClicked && (
-                            <List className="nav__list">
+                            <ul className="nav_ulst">
                                 <a href="#hero">
                                     <li>Tech stack</li>
                                 </a>
@@ -58,10 +58,10 @@ function App() {
                                 <a href="#projects">
                                     <li>Projects</li>
                                 </a>
-                            </List>
+                            </ul>
                         )}{' '}
                         {isFrenchClicked && (
-                            <List className="nav__list">
+                            <ul className="nav__list">
                                 <a href="#hero">
                                     <li>Stack technique</li>
                                 </a>
@@ -71,16 +71,35 @@ function App() {
                                 <a href="#projects">
                                     <li>Projets</li>
                                 </a>
-                            </List>
+                            </ul>
                         )}
                     </nav>
                     <div className="language__flex-item">
                         <div className="socials">
+                            <a
+                                href="mailto:theressadmalone@gmail.com"
+                                target="blank"
+                            >
+                                <FontAwesomeIcon className="fa-regular fa-envelope socials-link"></FontAwesomeIcon>
+                            </a>
                             <a href="https://github.com/tssa017">
                                 <FontAwesomeIcon className="fa-brands fa-github socials-link"></FontAwesomeIcon>
                             </a>
                             <a href="https://www.linkedin.com/in/theressamalone/">
                                 <FontAwesomeIcon className="fa-brands fa-linkedin socials-link"></FontAwesomeIcon>
+                            </a>
+                        </div>
+                        <div class="cv">
+                            <a
+                                download=""
+                                href="#"
+                                aria-label="Link to Token to Theressa Malone CV"
+                            >
+                                <Button className="cv__btn">
+                                    {isEnglishClicked
+                                        ? 'Download my CV!'
+                                        : 'Télécharger mon CV !'}
+                                </Button>
                             </a>
                         </div>
                         {!isEnglishClicked && (
@@ -107,6 +126,7 @@ function App() {
                 </div>
                 <Hero />
                 <Bio />
+                <Form />
                 <Projects />
                 <Footer />
             </Router>
