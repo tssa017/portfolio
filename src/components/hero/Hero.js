@@ -58,9 +58,9 @@ function Hero() {
                                         : 'Ecosystem :'}
                                 </strong>
                             </li>
-                            <li>Visual Studio Code</li>
                             <li>GitHub / GitLab</li>
                             <li>Netlify</li>
+                            <li>Visual Studio Code</li>
                         </ul>
                     </div>
                 </div>

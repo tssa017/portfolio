@@ -158,6 +158,20 @@ a {
   font-weight: 700;
 }
 
+.cv__btn {
+  border: 0.2rem solid #3d3c3c;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+}
+.cv__btn:hover {
+  background-color: #f6ddff;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
   .bio__para {
     font-size: 1.3rem;

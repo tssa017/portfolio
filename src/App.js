@@ -89,19 +89,6 @@ function App() {
                                 <FontAwesomeIcon className="fa-brands fa-linkedin socials-link"></FontAwesomeIcon>
                             </a>
                         </div>
-                        <div class="cv">
-                            <a
-                                download=""
-                                href="#"
-                                aria-label="Link to Token to Theressa Malone CV"
-                            >
-                                <Button className="cv__btn">
-                                    {isEnglishClicked
-                                        ? 'Download my CV!'
-                                        : 'Télécharger mon CV !'}
-                                </Button>
-                            </a>
-                        </div>
                         {!isEnglishClicked && (
                             <Button
                                 className="language__btn"
