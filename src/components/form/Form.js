@@ -14,7 +14,7 @@ function Form() {
                     <form
                         class="form__container--form"
                         target="_blank"
-                        action="https://formsubmit.co/theressadmalone@gmail.com"
+                        action="https://formsubmit.co/3550eaddbace6d5ed9e6a53c3390e773"
                         method="POST"
                     >
                         <div class="form-group">
