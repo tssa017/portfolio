@@ -77,7 +77,7 @@ function App() {
                     <div className="language__flex-item">
                         <div className="socials">
                             <a
-                                href="mailto:theressadmalone@gmail.com"
+                                href="mailto:theressa.malone.fr@gmail.com"
                                 target="blank"
                             >
                                 <FontAwesomeIcon className="fa-regular fa-envelope socials-link"></FontAwesomeIcon>

@@ -49,6 +49,7 @@ function Hero() {
                             <li>Express</li>
                             <li>MySQL / Sequelize</li>
                             <li>MongoDB / Mongoose</li>
+                            <li>AWS</li>
                         </ul>
                         <ul className="hero__stack-list">
                             <li>
@@ -60,6 +61,7 @@ function Hero() {
                             </li>
                             <li>GitHub / GitLab</li>
                             <li>Netlify</li>
+                            <li>Vercel</li>
                             <li>Visual Studio Code</li>
                         </ul>
                     </div>
