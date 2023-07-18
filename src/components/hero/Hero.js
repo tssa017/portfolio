@@ -9,11 +9,11 @@ function Hero() {
                 <div className="hero" id="hero">
                     {isEnglishClicked ? (
                         <h1 className="hero__heading">
-                            Web Developer based in Paris, France
+                            Full-Stack Developer based in Paris, France
                         </h1>
                     ) : (
                         <h1 className="hero__heading">
-                            Développeuse web basé à Paris, France
+                            Développeuse fullstack basé à Paris, France
                         </h1>
                     )}
                     <Paragraph className="hero__stack-heading">
