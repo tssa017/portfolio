@@ -19,15 +19,15 @@ function Projects() {
                     )}
                     <div className="projects__cards-cont">
                         <a
-                            href="https://milly-magazine.netlify.app/"
+                            href="https://milly-magazine.vercel.app/"
                             target="blank"
                         >
                             <Card src="images/milly_logo.svg">
                                 <h2>Milly Magazine</h2>
                                 <Paragraph>
                                     {isEnglishClicked
-                                        ? 'In construction: an online literary magazine I designed with Figma. Built with React, SCSS, and Tailwind.'
-                                        : "En cours de construction : un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec React, SCSS, et Tailwind."}
+                                        ? 'In construction: an online literary magazine I designed with Figma. Built with TypeScript, Next.js, and Tailwind CSS. Deployed with Vercel.'
+                                        : "En cours de construction : un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec TypeScript, Next.js, et Tailwind CSS. Déployé avec Vercel"}
                                 </Paragraph>
                             </Card>
                         </a>
