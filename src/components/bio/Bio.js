@@ -1,7 +1,7 @@
 import '../../index.scss';
 import LanguageContext from '../language/LanguageContext';
 import Paragraph from '../paragraph/Paragraph.js';
-import Button from '../button/Button';
+// import Button from '../button/Button';
 
 function Bio() {
     return (
