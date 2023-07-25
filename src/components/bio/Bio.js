@@ -27,7 +27,7 @@ function Bio() {
                             ? 'I started learning to code so that I could optimise the layout of my online literary magazine in HTML and CSS. I quickly became interested in programming, and graduated with my diploma in Web Development from OpenClassrooms. I am now looking to collaborate with a team of talented developers, building high quality, long term projects in the French Tech ecosystem.'
                             : "J'ai commencé à apprendre à coder afin d'optimiser la mise en page de mon magazine littéraire en ligne en HTML et CSS. Je me suis rapidement intéressée à la programmation, et j'ai obtenu mon diplôme en développement web chez OpenClassrooms. Je cherche maintenant à collaborer avec une équipe de développeurs talentueux, en construisant des projets de qualité et à long terme dans l'écosystème de la French Tech."}
                     </Paragraph>
-                    <div class="cv" id="cv">
+                    {/* <div class="cv" id="cv">
                         {isEnglishClicked ? (
                             <a
                                 download=""
@@ -49,7 +49,7 @@ function Bio() {
                                 </Button>
                             </a>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             )}
         </LanguageContext.Consumer>

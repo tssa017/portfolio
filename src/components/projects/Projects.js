@@ -27,7 +27,7 @@ function Projects() {
                                 <Paragraph>
                                     {isEnglishClicked
                                         ? 'In construction: an online literary magazine I designed with Figma. Built with TypeScript, Next.js, and Tailwind CSS. Deployed with Vercel.'
-                                        : "En cours de construction : un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec TypeScript, Next.js, et Tailwind CSS. Déployé avec Vercel"}
+                                        : "En cours de construction : un magazine littéraire en ligne que j'ai conçue avec Figma. Construite avec TypeScript, Next.js, et Tailwind CSS. Déployé avec Vercel."}
                                 </Paragraph>
                             </Card>
                         </a>
