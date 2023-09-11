@@ -12,7 +12,7 @@ import { useState } from 'react';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
-import Form from './components/form/Form';
+// import Form from './components/form/Form';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
@@ -113,7 +113,7 @@ function App() {
                 </div>
                 <Hero />
                 <Bio />
-                <Form />
+                {/* <Form /> */}
                 <Projects />
                 <Footer />
             </Router>
