@@ -1,7 +1,7 @@
 // This page defines the main app logic
 
 // Imports
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.scss';
 import LanguageContext from './components/language/LanguageContext';
 import Button from './components/button/Button';
@@ -12,7 +12,7 @@ import { useState } from 'react';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
-// import Form from './components/form/Form';
+import Form from './components/form/Form';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
@@ -49,27 +49,27 @@ function App() {
                     <nav className="nav">
                         {isEnglishClicked && (
                             <ul className="nav_ulst">
-                                <a href="#hero">
-                                    <li>Tech stack</li>
-                                </a>
-                                <a href="#bio">
+                                <a href="/about">
                                     <li>About</li>
                                 </a>
-                                <a href="#projects">
+                                <a href="/projects">
                                     <li>Projects</li>
+                                </a>
+                                <a href="/contact">
+                                    <li>Contact</li>
                                 </a>
                             </ul>
                         )}{' '}
                         {isFrenchClicked && (
                             <ul className="nav__list">
-                                <a href="#hero">
-                                    <li>Stack technique</li>
-                                </a>
-                                <a href="#bio">
+                                <a href="/about">
                                     <li>À propos</li>
                                 </a>
-                                <a href="#projects">
+                                <a href="/projects">
                                     <li>Projets</li>
+                                </a>
+                                <a href="/contact">
+                                    <li>Contacter</li>
                                 </a>
                             </ul>
                         )}
@@ -112,9 +112,11 @@ function App() {
                     </div>
                 </div>
                 <Hero />
-                <Bio />
-                {/* <Form /> */}
-                <Projects />
+                <Routes>
+                    <Route path="/contact" element={<Form />} />
+                    <Route path="/about" element={<Bio />} />
+                    <Route path="/projects" element={<Projects />} />
+                </Routes>
                 <Footer />
             </Router>
         </LanguageContext.Provider>
