@@ -76,12 +76,12 @@ function App() {
                     </nav>
                     <div className="language__flex-item">
                         <div className="socials">
-                            <a
+                            {/* <a
                                 href="mailto:theressa.malone.fr@gmail.com"
                                 target="blank"
                             >
                                 <FontAwesomeIcon className="fa-regular fa-envelope socials-link"></FontAwesomeIcon>
-                            </a>
+                            </a> */}
                             <a href="https://github.com/tssa017">
                                 <FontAwesomeIcon className="fa-brands fa-github socials-link"></FontAwesomeIcon>
                             </a>
@@ -112,7 +112,7 @@ function App() {
                     </div>
                 </div>
                 <Routes>
-                    <Route path="/home" element={<Hero />} />
+                    <Route path="/" element={<Hero />} />
                     <Route path="/contact" element={<Form />} />
                     <Route path="/about" element={<Bio />} />
                     <Route path="/projects" element={<Projects />} />
