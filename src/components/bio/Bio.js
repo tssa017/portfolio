@@ -8,11 +8,6 @@ function Bio() {
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
                 <div className="bio" id="bio">
-                    <img
-                        src="images/avatar.png"
-                        className="bio__img"
-                        alt="avatar"
-                    ></img>
                     <h2>
                         {' '}
                         {isEnglishClicked ? 'About me!' : 'À propos de moi !'}
