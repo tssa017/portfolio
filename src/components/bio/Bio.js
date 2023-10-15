@@ -13,8 +13,8 @@ function Bio() {
                         {isEnglishClicked ? 'About me' : 'À propos de moi'}
                     </h2>
                     <img
-                        src="images/Theressa.jpeg"
-                        alt="Therssa Malone"
+                        src="images/Theressa.jpg"
+                        alt="Theressa Malone"
                         className="bio__img"
                     ></img>
                     <Paragraph className="bio__para">
