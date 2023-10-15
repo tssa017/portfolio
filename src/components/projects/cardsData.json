@@ -31,13 +31,13 @@
     },
     {
         "title": "Ohmyfood",
-        "description": "Developed this website using HTML5 and SCSS. Deployed with Netlify.",
+        "description": "Developed this menu app using HTML5 and SCSS. Deployed with Netlify.",
         "link": "https://ohmyfood-theressa.netlify.app/",
         "imageSrc": "images/Ohmyfood.png"
     },
     {
         "title": "Booki",
-        "description": "Developed this website using HTML5 and CSS. Deployed with Netlify.",
+        "description": "Developed this booking website using HTML5 and CSS. Deployed with Netlify.",
         "link": "https://booki-theressa-malone.netlify.app/",
         "imageSrc": "images/Booki.png"
     }
