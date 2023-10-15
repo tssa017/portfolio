@@ -11,6 +11,8 @@
     &__img {
         width: 200px;
         height: auto;
+        border-radius: 100%;
+        border: solid 0.3rem $colorBorder;
     }
 
     &__para {

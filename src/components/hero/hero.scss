@@ -6,7 +6,6 @@
     flex-direction: column;
     gap: 1rem;
     padding: 3rem;
-    background-color: $colorSecondary;
     border: none;
 
     &__heading {
@@ -25,9 +24,7 @@
     }
 
     &__stack-list {
-        @include borderStyle;
         padding: 1.5rem;
-        background-color: $colorBackgroundLight;
         list-style-type: none;
         line-height: 2.4rem;
     }

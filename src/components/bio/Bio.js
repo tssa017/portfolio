@@ -12,15 +12,20 @@ function Bio() {
                         {' '}
                         {isEnglishClicked ? 'About me' : 'À propos de moi'}
                     </h2>
+                    <img
+                        src="images/Theressa.jpeg"
+                        alt="Therssa Malone"
+                        className="bio__img"
+                    ></img>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? "Hi! I'm Theressa, a Full-Stack developer based in Paris."
-                            : "Salut ! Moi c'est Theressa, une développeuse Full-Stack basée à Paris."}
+                            ? "Hi! I'm Theressa, a Full-Stack developer, Berkeley alum, and bookworm based in Paris. I'm currently an automations developer at Captain Data."
+                            : "Salut ! Moi c'est Theressa, une développeuse Full-Stack, Berkeley alumni, et rat de bibliothèque basée à Paris. Je suis actuellement développeuse d'automatisations chez Captain Data."}
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? 'I started learning to code so that I could optimise the layout of my online literary magazine in HTML and CSS. I quickly became interested in programming, and graduated with my diploma in Web Development from OpenClassrooms. I am now looking to collaborate with a team of talented developers, building high quality, long term projects in the French Tech ecosystem.'
-                            : "J'ai commencé à apprendre à coder afin d'optimiser la mise en page de mon magazine littéraire en ligne en HTML et CSS. Je me suis rapidement intéressée à la programmation, et j'ai obtenu mon diplôme en développement web chez OpenClassrooms. Je cherche maintenant à collaborer avec une équipe de développeurs talentueux, en construisant des projets de qualité et à long terme dans l'écosystème de la French Tech."}
+                            ? 'I started teaching myself how to code my literary magazine with HTML and CSS, and soon became hooked. Looking forward to continue building accessible, secure web applications!'
+                            : "J'ai commencé à apprendre à coder moi-même mon magazine littéraire avec HTML et CSS, et je suis rapidement devenue passionée. J'ai hâte de continuer à construire des applications web accessibles et sécurisées !"}
                     </Paragraph>
                     {/* <div class="cv" id="cv">
                         {isEnglishClicked ? (
