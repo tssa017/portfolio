@@ -12,15 +12,10 @@ function Bio() {
                         {' '}
                         {isEnglishClicked ? 'About me' : 'À propos de moi'}
                     </h2>
-                    <img
-                        src="images/Theressa.jpg"
-                        alt="Theressa Malone"
-                        className="bio__img"
-                    ></img>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? "Hi! I'm Theressa, a Full-Stack developer, Berkeley alum, and bookworm based in Paris. I'm currently an automations developer at Captain Data."
-                            : "Salut ! Moi c'est Theressa, une développeuse Full-Stack, Berkeley alumni, et rat de bibliothèque basée à Paris. Je suis actuellement développeuse d'automatisations chez Captain Data."}
+                            ? "Hi! I'm Theressa, a Full-Stack developer, Berkeley alum, and bookworm based in Paris. I'm currently a Data Automation Developer at Captain Data."
+                            : 'Salut ! Moi c\'est Theressa, une développeuse Full-Stack, Berkeley alumni, et rat de bibliothèque basée à Paris. Je suis actuellement Développeuse "Data Automation Developer" chez Captain Data.'}
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked

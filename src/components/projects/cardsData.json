@@ -13,7 +13,7 @@
     },
     {
         "title": "Groupomania",
-        "description": "Designed and developed this social media network using Figma, HTML5, SCSS, JavaScript, React, and SQL with MySQL.",
+        "description": "Designed and developed this social media network using Figma, HTML5, SCSS, JavaScript, React, Node.js, Express, and SQL with MySQL and Sequelize.",
         "link": "https://github.com/tssa017/groupomania",
         "imageSrc": "images/Groupomania.png"
     },

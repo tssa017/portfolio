@@ -29,13 +29,23 @@
 }
 
 .nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+        list-style-type: none;
+    }
+
+    li {
+        padding: 1rem 0;
+        margin-right: 3rem;
+    }
 }
 
 .socials {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.6rem;
 
     &-link {
         font-size: 2.5rem;
@@ -54,12 +64,6 @@
     }
 
     .nav {
-        display: flex;
-
-        &__list {
-            list-style-type: none;
-        }
-
         li {
             padding: 0 2rem;
             display: inline-block;

@@ -8,13 +8,33 @@ function Hero() {
             {({ isEnglishClicked }) => (
                 <div className="hero" id="hero">
                     {isEnglishClicked ? (
-                        <h1 className="hero__heading">
-                            Full-Stack Developer based in Paris, France
-                        </h1>
+                        <Paragraph className="hero__heading">
+                            Hi! I'm Theressa.
+                        </Paragraph>
                     ) : (
-                        <h1 className="hero__heading">
-                            Développeuse fullstack basé à Paris, France
-                        </h1>
+                        <Paragraph className="hero__heading">
+                            Salut ! Moi c'est Theressa.
+                        </Paragraph>
+                    )}
+                    <img
+                        src="images/Theressa.jpg"
+                        alt="Theressa Malone"
+                        className="hero__img"
+                    ></img>
+                    {isEnglishClicked ? (
+                        <Paragraph className="hero__para">
+                            I'm a Full-Stack developer, Berkeley alum, and
+                            bookworm based in Paris.<br></br> I'm currently
+                            working as a Data Automation Developer at Captain
+                            Data.
+                        </Paragraph>
+                    ) : (
+                        <Paragraph className="hero__para">
+                            Je suis développeuse Full-Stack, Berkeley alumni, et
+                            rat de bibliothèque basée à Paris.<br></br> Je suis
+                            actuellement en poste de Data Automation Developer
+                            chez Captain Data.
+                        </Paragraph>
                     )}
                     <Paragraph className="hero__stack-heading">
                         {' '}
@@ -49,7 +69,6 @@ function Hero() {
                             <li>Express</li>
                             <li>MySQL / Sequelize</li>
                             <li>MongoDB / Mongoose</li>
-                            <li>AWS</li>
                         </ul>
                         <ul className="hero__stack-list">
                             <li>
