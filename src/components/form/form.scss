@@ -6,9 +6,7 @@
     align-items: center;
     gap: 1rem;
     padding: 3rem;
-    background-color: $colorSecondary;
-    border-top: 0.2rem solid $colorBorder;
-    border-bottom: 0.2rem solid $colorBorder;
+    border: none;
 
     &--heading {
         text-align: center;

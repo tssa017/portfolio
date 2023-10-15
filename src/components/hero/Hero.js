@@ -31,8 +31,8 @@ function Hero() {
                                         : 'Front-End :'}
                                 </strong>
                             </li>
-                            <li>CSS3 / SCSS / Tailwind CSS</li>
                             <li>HTML5</li>
+                            <li>CSS3 / SCSS / Tailwind CSS</li>
                             <li>JavaScript / TypeScript</li>
                             <li>React</li>
                             <li>Next.js</li>

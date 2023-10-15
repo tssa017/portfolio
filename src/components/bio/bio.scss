@@ -19,22 +19,22 @@
     }
 }
 
-.cv {
-    &__btn {
-        border: 0.2rem solid $colorBorder;
-        border-radius: 1rem;
-        padding: 1rem;
-        margin: 1rem;
-        font-family: 'Nunito', sans-serif;
-        font-size: 1.2rem;
+// .cv {
+//     &__btn {
+//         border: 0.2rem solid $colorBorder;
+//         border-radius: 1rem;
+//         padding: 1rem;
+//         margin: 1rem;
+//         font-family: 'Menlo', sans-serif;
+//         font-size: 1.2rem;
 
-        &:hover {
-            background-color: $colorPrimary;
-            cursor: pointer;
-            transition: 250ms ease-in-out;
-        }
-    }
-}
+//         &:hover {
+//             background-color: $colorPrimary;
+//             cursor: pointer;
+//             transition: 250ms ease-in-out;
+//         }
+//     }
+// }
 
 // Tablet and PC styles
 @media screen and (min-width: 768px) {

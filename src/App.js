@@ -96,7 +96,7 @@ function App() {
                                 onClick={handleEnglishClick}
                                 aria-label="Read page content in English"
                             >
-                                🇬🇧
+                                EN
                             </Button>
                         )}
                         {!isFrenchClicked && (
@@ -106,7 +106,7 @@ function App() {
                                 onClick={handleFrenchClick}
                                 aria-label="Read page content in French"
                             >
-                                🇫🇷
+                                FR
                             </Button>
                         )}
                     </div>

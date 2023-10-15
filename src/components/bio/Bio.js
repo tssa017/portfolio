@@ -10,12 +10,12 @@ function Bio() {
                 <div className="bio" id="bio">
                     <h2>
                         {' '}
-                        {isEnglishClicked ? 'About me!' : 'À propos de moi !'}
+                        {isEnglishClicked ? 'About me' : 'À propos de moi'}
                     </h2>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? "Hi! I'm Theressa, a curious and highly motivated web developer on a mission to build accessible, intuitive, and meaningful web applications ✨"
-                            : 'Salut ! Je suis Theressa, une développeuse web curieuse et très motivée dont la mission est de créer des applications web accessibles, intuitives et utiles ✨'}
+                            ? "Hi! I'm Theressa, a Full-Stack developer based in Paris."
+                            : "Salut ! Moi c'est Theressa, une développeuse Full-Stack basée à Paris."}
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
