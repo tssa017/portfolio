@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Watch it Outside",
+        "description": "Designed and developed this booking platform for a Boston-based film festival using Figma, HTML5, Tailwind CSS, and JavaScript. Deployed with Netlify.",
+        "link": "https://watch-it-outside-openclassrooms.netlify.app/",
+        "imageSrc": "images/Watch_it_outside.png"
+    },
+    {
+        "title": "Milly Magazine",
+        "description": "Founded, designed and developed this online literary magazine using Figma, HTML5, JavaScript, Tailwind CSS, and NextJS. Deployed with Vercel.",
+        "link": "https://milly-magazine.vercel.app/",
+        "imageSrc": "images/milly_logo.svg"
+    },
+    {
+        "title": "Groupomania",
+        "description": "Designed and developed this social media network using Figma, HTML5, SCSS, JavaScript, React, and SQL with MySQL.",
+        "link": "https://github.com/tssa017/groupomania",
+        "imageSrc": "images/Groupomania.png"
+    },
+    {
+        "title": "Glow Girls",
+        "description": "Designed and developed this booking platform using Figma, HTML5, SCSS, and JavaScript.",
+        "link": "https://glowgirls.co.nz/",
+        "imageSrc": "images/Glow_girls.png"
+    },
+    {
+        "title": "Wulfman Corporation",
+        "description": "Performed an SEO and accessibility audit and optimised responsivity for this website using Lighthouse.",
+        "link": "http://www.wulfman-corporation.com/",
+        "imageSrc": "images/wulfman_logo.jpeg"
+    },
+    {
+        "title": "Ohmyfood",
+        "description": "Developed this website using HTML5 and SCSS. Deployed with Netlify.",
+        "link": "https://ohmyfood-theressa.netlify.app/",
+        "imageSrc": "images/Ohmyfood.png"
+    },
+    {
+        "title": "Booki",
+        "description": "Developed this website using HTML5 and CSS. Deployed with Netlify.",
+        "link": "https://booki-theressa-malone.netlify.app/",
+        "imageSrc": "images/Booki.png"
+    }
+]

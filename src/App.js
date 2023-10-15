@@ -111,8 +111,8 @@ function App() {
                         )}
                     </div>
                 </div>
-                <Hero />
                 <Routes>
+                    <Route path="/home" element={<Hero />} />
                     <Route path="/contact" element={<Form />} />
                     <Route path="/about" element={<Bio />} />
                     <Route path="/projects" element={<Projects />} />
