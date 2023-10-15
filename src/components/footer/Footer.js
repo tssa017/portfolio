@@ -10,7 +10,7 @@ function Footer() {
                     <footer className="footer">
                         <Paragraph>
                             {isEnglishClicked
-                                ? '© Theressa Malone, 2023 | Built in React. Deployed with Netlify,'
+                                ? '© Theressa Malone, 2023 | Built in React. Deployed with Netlify.'
                                 : '© Theressa Malone, 2023 | Construit en React. Déployé avec Netlify.'}
                         </Paragraph>
                     </footer>
