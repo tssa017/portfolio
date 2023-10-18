@@ -23,17 +23,16 @@ function Hero() {
                     ></img>
                     {isEnglishClicked ? (
                         <Paragraph className="hero__para">
-                            I'm a Full-Stack developer, Berkeley alum, and
-                            bookworm based in Paris.<br></br> I'm currently
-                            working as a Data Automation Developer at Captain
-                            Data.
+                            I'm a Full-Stack dev, Berkeley alum, and bookworm
+                            based in Paris.<br></br> I'm currently working as an
+                            Automations Developer at Captain Data.
                         </Paragraph>
                     ) : (
                         <Paragraph className="hero__para">
                             Je suis développeuse Full-Stack, Berkeley alumni, et
                             rat de bibliothèque basée à Paris.<br></br> Je suis
-                            actuellement en poste de Data Automation Developer
-                            chez Captain Data.
+                            actuellement en poste de Automations Developer chez
+                            Captain Data.
                         </Paragraph>
                     )}
                     <Paragraph className="hero__stack-heading">

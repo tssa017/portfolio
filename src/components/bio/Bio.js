@@ -14,13 +14,13 @@ function Bio() {
                     </h2>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? "Hi! I'm Theressa, a Full-Stack developer, Berkeley alum, and bookworm based in Paris. I'm currently a Data Automation Developer at Captain Data."
-                            : 'Salut ! Moi c\'est Theressa, une développeuse Full-Stack, Berkeley alumni, et rat de bibliothèque basée à Paris. Je suis actuellement Développeuse "Data Automation Developer" chez Captain Data.'}
+                            ? 'I started teaching myself how to code my literary magazine with HTML and CSS, and soon became hooked.'
+                            : "J'ai commencé à apprendre à coder moi-même mon magazine littéraire avec HTML et CSS, et je suis rapidement devenue passionée."}
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? 'I started teaching myself how to code my literary magazine with HTML and CSS, and soon became hooked. Looking forward to continue building accessible, secure web applications!'
-                            : "J'ai commencé à apprendre à coder moi-même mon magazine littéraire avec HTML et CSS, et je suis rapidement devenue passionée. J'ai hâte de continuer à construire des applications web accessibles et sécurisées !"}
+                            ? 'I speak French and English, love to read, and am interested in cyber security. Looking forward to continue building accessible, secure web applications!'
+                            : "Je parle français et anglais, j'aime lire et je m'intéresse à la cybersécurité. J'ai hâte de continuer à construire des applications web accessibles et sécurisées !"}
                     </Paragraph>
                     {/* <div class="cv" id="cv">
                         {isEnglishClicked ? (
