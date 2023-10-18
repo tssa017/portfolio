@@ -6,7 +6,7 @@ import './index.scss';
 import LanguageContext from './components/language/LanguageContext';
 import Button from './components/button/Button';
 import FontAwesomeIcon from './components/fontAwesomeIcon/FontAwesomeIcon';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // Components
 import Header from './components/header/Header';
@@ -17,6 +17,17 @@ import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
 function App() {
+    useEffect(() => {
+        const currentPath = window.location.pathname;
+        const links = document.getElementsByClassName('current');
+
+        for (const link of links) {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('current-page');
+            }
+        }
+    }, []);
+
     // These states store information about which language option a user has selected
     const [isEnglishClicked, setIsEnglishClicked] = useState(true);
     const [isFrenchClicked, setIsFrenchClicked] = useState(false);
@@ -48,27 +59,27 @@ function App() {
                 <div className="language">
                     <nav className="nav">
                         {isEnglishClicked && (
-                            <ul className="nav_ulst">
-                                <a href="/about">
+                            <ul className="nav_list">
+                                <a href="/about" className="current">
                                     <li>About</li>
                                 </a>
-                                <a href="/projects">
+                                <a href="/projects" className="current">
                                     <li>Projects</li>
                                 </a>
-                                <a href="/contact">
+                                <a href="/contact" className="current">
                                     <li>Contact</li>
                                 </a>
                             </ul>
                         )}{' '}
                         {isFrenchClicked && (
                             <ul className="nav__list">
-                                <a href="/about">
+                                <a href="/about" className="current">
                                     <li>À propos</li>
                                 </a>
-                                <a href="/projects">
+                                <a href="/projects" className="current">
                                     <li>Projets</li>
                                 </a>
-                                <a href="/contact">
+                                <a href="/contact" className="current">
                                     <li>Contacter</li>
                                 </a>
                             </ul>
