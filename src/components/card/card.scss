@@ -5,50 +5,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include borderStyle;
-    padding: 2rem 1rem;
+    background-color: $colorBackgroundLight;
+    border: none;
+    padding: 0 1rem 2rem 1rem;
     height: 620px;
-    width: 275px;
+    width: 320px;
 
     &__img {
-        @include borderStyle;
-        height: auto;
         width: 320px;
         margin-bottom: 1rem;
-        background-color: #fff;
+        border: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     &__heading {
+        padding: 1rem 0;
         align-self: flex-start;
         font-size: 1.2rem;
         padding-bottom: 0.5rem;
     }
 
     &__para {
-        font-size: 1rem;
+        line-height: 2rem;
+        font-size: 0.9rem;
     }
 
     &__icons {
         align-self: flex-start;
-    }
-
-    &:hover {
-        background-color: $colorPrimary;
-        transition: 250ms ease-in-out;
     }
 }
 
 // Tablet and PC styles
 @media screen and (min-width: 768px) {
     .card {
-        width: 360px;
-
         &__heading {
+            padding-top: 1rem;
             font-size: 1.2rem;
         }
 
-        &__para {
-            font-size: 1.2rem;
+        &:hover {
+            background-color: $colorPrimary;
+            transition: 250ms ease-in-out;
         }
     }
 }

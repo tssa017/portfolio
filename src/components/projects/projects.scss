@@ -1,5 +1,4 @@
 // This page contains site-wide responsive Sass projects styles
-
 .projects {
     display: flex;
     flex-flow: row wrap;
@@ -7,6 +6,7 @@
     padding: 1rem;
 
     &__heading {
+        padding: 3rem 0;
         text-align: center;
     }
 
