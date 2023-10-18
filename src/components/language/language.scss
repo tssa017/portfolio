@@ -1,7 +1,7 @@
 // This page contains site-wide responsive Sass language styles
 .language {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
@@ -18,9 +18,11 @@
 
 .nav {
     display: flex;
+    padding-bottom: 1.5rem;
 
     li {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
+        text-align: center;
         margin-right: 1rem;
         font-size: 1rem;
     }
@@ -33,21 +35,19 @@
 
     &-link {
         font-size: 2.5rem;
-
-        &:hover {
-            color: $colorTertiary;
-            transition: 250ms;
-        }
     }
 }
 
 // Tablet and PC styles
 @media screen and (min-width: 768px) {
     .language {
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .nav {
+        padding-bottom: 0;
+
         li {
             padding: 0 2rem;
             display: inline-block;
