@@ -2,10 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Form from './Form';
 
+// Checks that Form component renders with the default English language context.
 describe('Form component', () => {
   it('renders the form with the provided context', () => {
-    const { getByText, getByPlaceholderText } = render(<Form />);
+    const { getByText, getByPlaceholderText } = render(<Form />); 
     
+    // Expectations check that elements with text content such as "Get in touch!" are present in the rendered output. 
     expect(getByText('Get in touch!')).toBeInTheDocument();
     expect(getByPlaceholderText('Full name')).toBeInTheDocument();
     expect(getByPlaceholderText('Email')).toBeInTheDocument();
