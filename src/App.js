@@ -64,7 +64,7 @@ function App() {
                                     <li>About</li>
                                 </a>
                                 <a href="/projects" className="current">
-                                    <li>Projects</li>
+                                    <li id="middle-item">Projects</li>
                                 </a>
                                 <a href="/contact" className="current">
                                     <li>Contact</li>

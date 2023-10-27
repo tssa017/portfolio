@@ -26,6 +26,11 @@
         margin-right: 1rem;
         font-size: 1rem;
     }
+
+    #middle-item {
+        border-top: 2px solid $colorBorder;
+        border-bottom: 2px solid $colorBorder;
+    }
 }
 
 .current-page {
@@ -60,6 +65,11 @@
                 color: $colorTertiary;
                 transition: 250ms ease-in-out;
             }
+        }
+
+        #middle-item {
+            border-top: none;
+            border-bottom: none;
         }
     }
 }
