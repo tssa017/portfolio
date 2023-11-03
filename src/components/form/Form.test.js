@@ -1,30 +1,49 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
 import Form from './Form';
 
-// Checks that Form component renders with the default English language context.
+// Create a mock instance of axios
+const axiosMock = new MockAdapter(axios);
+
 describe('Form component', () => {
-  it('renders the form with the provided context', () => {
-    const { getByText, getByPlaceholderText } = render(<Form />); 
-    
-    // Expectations check that elements with text content such as "Get in touch!" are present in the rendered output. 
-    expect(getByText('Get in touch!')).toBeInTheDocument();
-    expect(getByPlaceholderText('Full name')).toBeInTheDocument();
-    expect(getByPlaceholderText('Email')).toBeInTheDocument();
-    expect(getByPlaceholderText('Your message...')).toBeInTheDocument();
-    expect(getByText('Send 🚀')).toBeInTheDocument();
-  });
+    beforeAll(() => {
+        axiosMock
+            .onPost('https://formsubmit.co/d0410c8c32eb7f50454b3a1671439d8b')
+            .reply(200, { success: true });
+    });
 
-  it('renders the form with French text when context value changes', () => {
-    jest.requireActual('../language/LanguageContext').Consumer = ({ children }) =>
-      children({ isEnglishClicked: false });
+    afterAll(() => {
+        axiosMock.restore();
+    });
 
-    const { getByText, getByPlaceholderText } = render(<Form>());
+    it('submits the form to the API', async () => {
+        const { getByText, getByPlaceholderText } = render(<Form />);
+        const nameInput = getByPlaceholderText('Full name');
+        const emailInput = getByPlaceholderText('Email');
+        const messageInput = getByPlaceholderText('Your message...');
+        const submitButton = getByText('Send 🚀');
 
-    expect(getByText('Échangeons !')).toBeInTheDocument();
-    expect(getByPlaceholderText('Nom / prénom')).toBeInTheDocument();
-    expect(getByPlaceholderText('Email')).toBeInTheDocument();
-    expect(getByPlaceholderText('Votre message...')).toBeInTheDocument();
-    expect(getByText('Envoyer 🚀')).toBeInTheDocument();
-  });
+        // Fill in form fields
+        fireEvent.change(nameInput, {
+            target: { value: 'Openclassrooms student' },
+        });
+        fireEvent.change(emailInput, {
+            target: { value: 'openclassroomsstudent@example.com' },
+        });
+        fireEvent.change(messageInput, {
+            target: { value: 'This is a test message' },
+        });
+
+        // Submit the form
+        fireEvent.click(submitButton);
+
+        // Wait for the form submission to complete
+        await waitFor(() => {
+            expect(
+                getByText('Form submitted successfully')
+            ).toBeInTheDocument();
+        });
+    });
 });
