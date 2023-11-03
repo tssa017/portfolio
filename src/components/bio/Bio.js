@@ -22,29 +22,6 @@ function Bio() {
                             ? 'I speak French and English, love to read, and am interested in cyber security. Looking forward to continue building accessible, secure web applications!'
                             : "Je parle français et anglais, j'aime lire et je m'intéresse à la cybersécurité. J'ai hâte de continuer à construire des applications web accessibles et sécurisées !"}
                     </Paragraph>
-                    {/* <div class="cv" id="cv">
-                        {isEnglishClicked ? (
-                            <a
-                                download=""
-                                href="pdf/CV_June_2023_compressed.pdf"
-                                aria-label="Link to Token to Theressa Malone CV"
-                            >
-                                <Button className="cv__btn">
-                                    Download my CV!
-                                </Button>
-                            </a>
-                        ) : (
-                            <a
-                                download=""
-                                href="pdf/CV_juin_2023_compressed.pdf"
-                                aria-label="Link to Token to Theressa Malone CV"
-                            >
-                                <Button className="cv__btn">
-                                    Télécharger mon CV !
-                                </Button>
-                            </a>
-                        )}
-                    </div> */}
                 </div>
             )}
         </LanguageContext.Consumer>

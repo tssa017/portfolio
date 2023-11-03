@@ -1,12 +1,13 @@
 import '../../index.scss';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div>
             <header className="header">
-                <a href="/">
+                <Link to="/">
                     <h1>Theressa Malone</h1>
-                </a>
+                </Link>
             </header>
         </div>
     );
