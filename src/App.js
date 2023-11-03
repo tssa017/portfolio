@@ -7,7 +7,7 @@ import LanguageContext from './components/language/LanguageContext';
 import Button from './components/button/Button';
 import FontAwesomeIcon from './components/fontAwesomeIcon/FontAwesomeIcon';
 import { useState, useEffect } from 'react';
-import { Link } from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import Header from './components/header/Header';
