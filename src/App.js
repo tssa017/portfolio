@@ -7,6 +7,7 @@ import LanguageContext from './components/language/LanguageContext';
 import Button from './components/button/Button';
 import FontAwesomeIcon from './components/fontAwesomeIcon/FontAwesomeIcon';
 import { useState, useEffect } from 'react';
+import { Link } from 'react';
 
 // Components
 import Header from './components/header/Header';
@@ -60,39 +61,33 @@ function App() {
                     <nav className="nav">
                         {isEnglishClicked && (
                             <ul className="nav_list">
-                                <a href="/about" className="current">
+                                <Link to="/about" className="current">
                                     <li>About</li>
-                                </a>
-                                <a href="/projects" className="current">
+                                </Link>
+                                <Link to="/projects" className="current">
                                     <li id="middle-item">Projects</li>
-                                </a>
-                                <a href="/contact" className="current">
+                                </Link>
+                                <Link to="/contact" className="current">
                                     <li>Contact</li>
-                                </a>
+                                </Link>
                             </ul>
                         )}{' '}
                         {isFrenchClicked && (
                             <ul className="nav__list">
-                                <a href="/about" className="current">
+                                <Link to="/about" className="current">
                                     <li>À propos</li>
-                                </a>
-                                <a href="/projects" className="current">
+                                </Link>
+                                <Link to="/projects" className="current">
                                     <li>Projets</li>
-                                </a>
-                                <a href="/contact" className="current">
+                                </Link>
+                                <Link to="/contact" className="current">
                                     <li>Contacter</li>
-                                </a>
+                                </Link>
                             </ul>
                         )}
                     </nav>
                     <div className="language__flex-item">
                         <div className="socials">
-                            {/* <a
-                                href="mailto:theressa.malone.fr@gmail.com"
-                                target="blank"
-                            >
-                                <FontAwesomeIcon className="fa-regular fa-envelope socials-link"></FontAwesomeIcon>
-                            </a> */}
                             <a href="https://github.com/tssa017">
                                 <FontAwesomeIcon className="fa-brands fa-github socials-link"></FontAwesomeIcon>
                             </a>
