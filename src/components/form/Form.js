@@ -53,57 +53,52 @@ function Form() {
                         {' '}
                         {isEnglishClicked ? 'Get in touch!' : 'Échangeons !'}
                     </h1>
-                    <form
-                        className="form__container--form"
-                        target="_blank" // Ensure that when the form is submitted, the result will open in a new browser window or tab, keeping the original page open
-                        onSubmit={handleSubmit}
-                    >
-                        <div className="form-group">
-                            <div className="form-row">
-                                <div className="col">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        className="form-control"
-                                        placeholder={
-                                            isEnglishClicked
-                                                ? 'Full name'
-                                                : 'Nom / prénom'
-                                        }
-                                        onChange={handleInputChange} // Register input change (update fields upon data entry)
-                                        required
-                                    />
-                                </div>
-                                <div className="col">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        className="form-control"
-                                        placeholder="Email"
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
+                    <div className="form-group">
+                        <div className="form-row">
+                            <div className="col">
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder={
+                                        isEnglishClicked
+                                            ? 'Full name'
+                                            : 'Nom / prénom'
+                                    }
+                                    onChange={handleInputChange} // Register input change (update fields upon data entry)
+                                    required
+                                />
+                            </div>
+                            <div className="col">
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    placeholder="Email"
+                                    onChange={handleInputChange}
+                                    required
+                                />
                             </div>
                         </div>
-                        <div className="form-group">
-                            <textarea
-                                placeholder={
-                                    isEnglishClicked
-                                        ? 'Your message...'
-                                        : 'Votre message...'
-                                }
-                                onChange={handleInputChange}
-                                className="form-control"
-                                name="message"
-                                rows="10"
-                                required
-                            ></textarea>
-                        </div>
-                        <Button type="submit" className={`form__btn`}>
-                            {isEnglishClicked ? 'Send 🚀' : 'Envoyer 🚀'}
-                        </Button>
-                    </form>
+                    </div>
+                    <div className="form-group">
+                        <textarea
+                            placeholder={
+                                isEnglishClicked
+                                    ? 'Your message...'
+                                    : 'Votre message...'
+                            }
+                            onChange={handleInputChange}
+                            className="form-control"
+                            rows="10"
+                            required
+                        ></textarea>
+                    </div>
+                    <Button
+                        type="submit"
+                        className={`form__btn`}
+                        onSubmit={handleSubmit}
+                    >
+                        {isEnglishClicked ? 'Send 🚀' : 'Envoyer 🚀'}
+                    </Button>
                 </div>
             )}
         </LanguageContext.Consumer>
