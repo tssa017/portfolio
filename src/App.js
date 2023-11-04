@@ -100,7 +100,6 @@ function App() {
                                 className="language__btn"
                                 id="language__btn--en"
                                 onClick={handleEnglishClick}
-                                aria-label="Read page content in English"
                             >
                                 EN
                             </Button>
@@ -110,7 +109,6 @@ function App() {
                                 className="language__btn"
                                 id="language__btn--fr"
                                 onClick={handleFrenchClick}
-                                aria-label="Read page content in French"
                             >
                                 FR
                             </Button>
