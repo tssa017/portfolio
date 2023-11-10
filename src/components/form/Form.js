@@ -56,6 +56,7 @@ function Form() {
                         );
                     }
                 });
+            handleConfirmation();
         } else {
             console.log('Form data is invalid. Please check your inputs.');
         }
@@ -171,10 +172,7 @@ function Form() {
                         <Button
                             type="submit"
                             className={`form__btn`}
-                            onClick={(event) => {
-                                handleSubmit(event);
-                                handleConfirmation(event);
-                            }}
+                            onClick={handleSubmit}
                         >
                             {isEnglishClicked ? 'Send 🚀' : 'Envoyer 🚀'}
                         </Button>
