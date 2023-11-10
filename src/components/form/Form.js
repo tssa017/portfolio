@@ -12,15 +12,6 @@ function Form() {
         message: '',
     });
 
-    // Keep track of form data as user types
-    const handleInputChange = (event) => {
-        const { id, value } = event.target;
-        setFormData({
-            ...formData,
-            [id]: value,
-        });
-    };
-
     const handleSubmit = (event) => {
         // Prevents default form submission behavior from making an HTTP request to the server and reloading the page
         event.preventDefault();
@@ -29,10 +20,19 @@ function Form() {
         formDataToSend.append('name', formData.name);
         formDataToSend.append('email', formData.email);
         formDataToSend.append('message', formData.message);
+        formDataToSend.append('_captcha', false);
 
         // Send FormData instance to API
         axios
-            .post('https://formsubmit.co/d0410c8c32eb7f50454b3a1671439d8b')
+            .post(
+                'https://formsubmit.co/d0410c8c32eb7f50454b3a1671439d8b',
+                formDataToSend,
+                {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                    },
+                }
+            )
             .then((response) => {
                 if (response.status === 200) {
                     console.log('Form submitted successfully');
@@ -45,6 +45,16 @@ function Form() {
             });
     };
 
+    // Keep track of form data as user types
+    const handleInputChange = (event, identifier) => {
+        const { value } = event.target;
+        console.log(value);
+        setFormData((prevData) => ({
+            ...prevData,
+            [identifier]: value,
+        }));
+    };
+
     return (
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
@@ -53,52 +63,61 @@ function Form() {
                         {' '}
                         {isEnglishClicked ? 'Get in touch!' : 'Échangeons !'}
                     </h1>
-                    <div className="form-group">
-                        <div className="form-row">
-                            <div className="col">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder={
-                                        isEnglishClicked
-                                            ? 'Full name'
-                                            : 'Nom / prénom'
-                                    }
-                                    onChange={handleInputChange} // Register input change (update fields upon data entry)
-                                    required
-                                />
-                            </div>
-                            <div className="col">
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    placeholder="Email"
-                                    onChange={handleInputChange}
-                                    required
-                                />
+                    <form>
+                        <div className="form-group">
+                            <div className="form-row">
+                                <div className="col">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder={
+                                            isEnglishClicked
+                                                ? 'Full name'
+                                                : 'Nom / prénom'
+                                        }
+                                        onChange={(event) =>
+                                            handleInputChange(event, 'name')
+                                        } // Register input change (update fields upon data entry)
+                                        required
+                                    />
+                                </div>
+                                <div className="col">
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        placeholder="Email"
+                                        onChange={(event) =>
+                                            handleInputChange(event, 'email')
+                                        }
+                                        required
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="form-group">
-                        <textarea
-                            placeholder={
-                                isEnglishClicked
-                                    ? 'Your message...'
-                                    : 'Votre message...'
-                            }
-                            onChange={handleInputChange}
-                            className="form-control"
-                            rows="10"
-                            required
-                        ></textarea>
-                    </div>
-                    <Button
-                        type="submit"
-                        className={`form__btn`}
-                        onSubmit={handleSubmit}
-                    >
-                        {isEnglishClicked ? 'Send 🚀' : 'Envoyer 🚀'}
-                    </Button>
+                        <div className="form-group">
+                            <textarea
+                                placeholder={
+                                    isEnglishClicked
+                                        ? 'Your message...'
+                                        : 'Votre message...'
+                                }
+                                onChange={(event) =>
+                                    handleInputChange(event, 'message')
+                                }
+                                className="form-control"
+                                rows="10"
+                                required
+                            ></textarea>
+                        </div>
+                        <Button
+                            type="submit"
+                            className={`form__btn`}
+                            onClick={handleSubmit}
+                            target="_blank"
+                        >
+                            {isEnglishClicked ? 'Send 🚀' : 'Envoyer 🚀'}
+                        </Button>
+                    </form>
                 </div>
             )}
         </LanguageContext.Consumer>
