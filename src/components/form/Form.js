@@ -12,47 +12,88 @@ function Form() {
         message: '',
     });
 
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
     const handleSubmit = (event) => {
         // Prevents default form submission behavior from making an HTTP request to the server and reloading the page
         event.preventDefault();
-        // Create FormData instance to construct the required input data
-        const formDataToSend = new FormData();
-        formDataToSend.append('name', formData.name);
-        formDataToSend.append('email', formData.email);
-        formDataToSend.append('message', formData.message);
-        formDataToSend.append('_captcha', false);
 
-        // Send FormData instance to API
-        axios
-            .post(
-                'https://formsubmit.co/d0410c8c32eb7f50454b3a1671439d8b',
-                formDataToSend,
-                {
-                    headers: {
-                        'Content-Type': 'multipart/form-data',
-                    },
-                }
-            )
-            .then((response) => {
-                if (response.status === 200) {
-                    console.log('Form submitted successfully');
-                } else {
-                    console.log(
-                        'Form submission failed with status code:',
-                        response.status
-                    );
-                }
-            });
+        const isValid = validateForm();
+
+        if (isValid) {
+            // Create FormData instance to construct the required input data
+            const formDataToSend = new FormData();
+            formDataToSend.append('name', formData.name);
+            formDataToSend.append('email', formData.email);
+            formDataToSend.append('message', formData.message);
+            formDataToSend.append('_captcha', false);
+
+            // Send FormData instance to API
+            axios
+                .post(
+                    'https://formsubmit.co/d0410c8c32eb7f50454b3a1671439d8b',
+                    formDataToSend,
+                    {
+                        headers: {
+                            'Content-Type': 'multipart/form-data',
+                        },
+                    }
+                )
+                .then((response) => {
+                    if (response.status === 200) {
+                        console.log('Form submitted successfully');
+                    } else {
+                        console.log(
+                            'Form submission failed with status code:',
+                            response.status
+                        );
+                    }
+                });
+        } else {
+            console.log('Form data is invalid. Please check your inputs.');
+        }
     };
 
-    // Keep track of form data as user types
+    // Register form data
     const handleInputChange = (event, identifier) => {
         const { value } = event.target;
-        console.log(value);
         setFormData((prevData) => ({
             ...prevData,
             [identifier]: value,
         }));
+
+        // Clear the error message when the user starts typing again
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [identifier]: '',
+        }));
+    };
+
+    const validateForm = () => {
+        let valid = true;
+        const newErrors = {
+            name: '',
+            email: '',
+            message: '',
+        };
+
+        if (formData.name.trim() === '') {
+            newErrors.name = 'Name cannot be empty';
+            valid = false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            newErrors.email = 'Invalid email format';
+            valid = false;
+        }
+
+        setErrors(newErrors);
+        return valid;
     };
 
     return (
@@ -77,9 +118,14 @@ function Form() {
                                         }
                                         onChange={(event) =>
                                             handleInputChange(event, 'name')
-                                        } // Register input change (update fields upon data entry)
+                                        } // Register input change
                                         required
                                     />
+                                    {errors.name && (
+                                        <span style={{ color: 'red' }}>
+                                            {errors.name}
+                                        </span>
+                                    )}
                                 </div>
                                 <div className="col">
                                     <input
@@ -91,6 +137,11 @@ function Form() {
                                         }
                                         required
                                     />
+                                    {errors.email && (
+                                        <span style={{ color: 'red' }}>
+                                            {errors.email}
+                                        </span>
+                                    )}
                                 </div>
                             </div>
                         </div>
