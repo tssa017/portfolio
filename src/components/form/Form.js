@@ -2,9 +2,12 @@ import '../../index.scss';
 import LanguageContext from '../language/LanguageContext';
 import Button from '../button/Button.js';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function Form() {
+    const navigate = useNavigate();
+
     // Set attributes that will hold input values that will be posted to formsubmit API
     const [formData, setFormData] = useState({
         name: '',
@@ -96,6 +99,11 @@ function Form() {
         return valid;
     };
 
+    // Function handles logout by clearing JWT from localStorage
+    const handleConfirmation = () => {
+        navigate('/thanks');
+    };
+
     return (
         <LanguageContext.Consumer>
             {({ isEnglishClicked }) => (
@@ -163,8 +171,10 @@ function Form() {
                         <Button
                             type="submit"
                             className={`form__btn`}
-                            onClick={handleSubmit}
-                            target="_blank"
+                            onClick={(event) => {
+                                handleSubmit(event);
+                                handleConfirmation(event);
+                            }}
                         >
                             {isEnglishClicked ? 'Send 🚀' : 'Envoyer 🚀'}
                         </Button>

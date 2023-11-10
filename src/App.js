@@ -14,6 +14,7 @@ import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
 import Form from './components/form/Form';
+import Thanks from './components/thanks/Thanks';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
@@ -120,6 +121,7 @@ function App() {
                     <Route path="/contact" element={<Form />} />
                     <Route path="/about" element={<Bio />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/thanks" element={<Thanks />} />
                 </Routes>
                 <Footer />
             </Router>
