@@ -13,8 +13,7 @@ import { Link } from 'react-router-dom';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
-import Form from './components/form/Form';
-import Thanks from './components/thanks/Thanks';
+// import Form from './components/form/Form';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
@@ -68,9 +67,9 @@ function App() {
                                 <Link to="/projects" className="current">
                                     <li id="middle-item">Projects</li>
                                 </Link>
-                                <Link to="/contact" className="current">
+                                {/* <Link to="/contact" className="current">
                                     <li>Contact</li>
-                                </Link>
+                                </Link> */}
                             </ul>
                         )}{' '}
                         {isFrenchClicked && (
@@ -79,11 +78,11 @@ function App() {
                                     <li>À propos</li>
                                 </Link>
                                 <Link to="/projects" className="current">
-                                    <li>Projets</li>
+                                    <li id="middle-item">Projets</li>
                                 </Link>
-                                <Link to="/contact" className="current">
+                                {/* <Link to="/contact" className="current">
                                     <li>Contacter</li>
-                                </Link>
+                                </Link> */}
                             </ul>
                         )}
                     </nav>
@@ -118,10 +117,9 @@ function App() {
                 </div>
                 <Routes>
                     <Route path="/" element={<Hero />} />
-                    <Route path="/contact" element={<Form />} />
+                    {/* <Route path="/contact" element={<Form />} /> */}
                     <Route path="/about" element={<Bio />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/thanks" element={<Thanks />} />
                 </Routes>
                 <Footer />
             </Router>
