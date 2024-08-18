@@ -24,8 +24,8 @@ function Bio() {
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? "When I'm not obsessing over our product, you will find me in the library. I love reading, writing, and talking about writing."
-                            : "Quand je ne suis pas plongée dans le développement de produits, vous me trouverez à la bibliothèque. J'adore lire, écrire et discuter d'écriture"}
+                            ? "When I'm not obsessing over our product, you will find me in the library. I love reading, writing, and talking about writing 🤓"
+                            : "Quand je ne suis pas plongée dans le développement de produits, vous me trouverez à la bibliothèque. J'adore lire, écrire et discuter d'écriture 🤓"}
                     </Paragraph>
                 </div>
             )}
