@@ -25,7 +25,7 @@ function Hero() {
                         <Paragraph className="hero__para">
                             I'm a Product Manager, Berkeley alum, and bookworm
                             based in Paris.<br></br> I'm currently building
-                            AI-driven solutions for women's health at Sonio.
+                            AI-driven solutions for women's health at Sonio 👩‍🍼
                         </Paragraph>
                     ) : (
                         <Paragraph className="hero__para">
@@ -66,7 +66,7 @@ function Hero() {
                             </li>
                             <li>Node.js</li>
                             <li>Express</li>
-                            <li>MySQL / Sequelize</li>
+                            <li>MySQL / Sequelize / PostgreSQL</li>
                             <li>MongoDB / Mongoose</li>
                         </ul>
                         <ul className="hero__stack-list">
