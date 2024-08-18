@@ -1,34 +1,24 @@
-// This page defines the main app logic
-
 // Imports
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    NavLink,
+} from 'react-router-dom';
 import './index.scss';
 import LanguageContext from './components/language/LanguageContext';
 import Button from './components/button/Button';
 import FontAwesomeIcon from './components/fontAwesomeIcon/FontAwesomeIcon';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 // Components
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Bio from './components/bio/Bio';
-// import Form from './components/form/Form';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
 function App() {
-    useEffect(() => {
-        const currentPath = window.location.pathname;
-        const links = document.getElementsByClassName('current');
-
-        for (const link of links) {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('current-page');
-            }
-        }
-    }, []);
-
     // These states store information about which language option a user has selected
     const [isEnglishClicked, setIsEnglishClicked] = useState(true);
     const [isFrenchClicked, setIsFrenchClicked] = useState(false);
@@ -45,7 +35,6 @@ function App() {
     };
 
     return (
-        // Consuming component responds to context provider function
         <LanguageContext.Provider
             value={{
                 isEnglishClicked,
@@ -56,33 +45,62 @@ function App() {
         >
             <Router>
                 <Header />
-                {/* Set site language on button click */}
                 <div className="language">
                     <nav className="nav">
                         {isEnglishClicked && (
                             <ul className="nav_list">
-                                <Link to="/about" className="current">
-                                    <li>About</li>
-                                </Link>
-                                <Link to="/projects" className="current">
-                                    <li id="middle-item">Projects</li>
-                                </Link>
-                                {/* <Link to="/contact" className="current">
-                                    <li>Contact</li>
-                                </Link> */}
+                                <li>
+                                    <NavLink
+                                        to="/about"
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'current-page'
+                                                : 'nav-link'
+                                        }
+                                    >
+                                        About
+                                    </NavLink>
+                                </li>
+                                <li id="middle-item">
+                                    <NavLink
+                                        to="/projects"
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'current-page'
+                                                : 'nav-link'
+                                        }
+                                    >
+                                        Projects
+                                    </NavLink>
+                                </li>
                             </ul>
-                        )}{' '}
+                        )}
                         {isFrenchClicked && (
                             <ul className="nav__list">
-                                <Link to="/about" className="current">
-                                    <li>À propos</li>
-                                </Link>
-                                <Link to="/projects" className="current">
-                                    <li id="middle-item">Projets</li>
-                                </Link>
-                                {/* <Link to="/contact" className="current">
-                                    <li>Contacter</li>
-                                </Link> */}
+                                <li>
+                                    <NavLink
+                                        to="/about"
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'current-page'
+                                                : 'nav-link'
+                                        }
+                                    >
+                                        À propos
+                                    </NavLink>
+                                </li>
+                                <li id="middle-item">
+                                    <NavLink
+                                        to="/projects"
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'current-page'
+                                                : 'nav-link'
+                                        }
+                                    >
+                                        Projets
+                                    </NavLink>
+                                </li>
                             </ul>
                         )}
                     </nav>
@@ -117,7 +135,6 @@ function App() {
                 </div>
                 <Routes>
                     <Route path="/" element={<Hero />} />
-                    {/* <Route path="/contact" element={<Form />} /> */}
                     <Route path="/about" element={<Bio />} />
                     <Route path="/projects" element={<Projects />} />
                 </Routes>

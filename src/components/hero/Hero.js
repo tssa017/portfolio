@@ -24,15 +24,17 @@ function Hero() {
                     {isEnglishClicked ? (
                         <Paragraph className="hero__para">
                             I'm a Product Manager, Berkeley alum, and bookworm
-                            based in Paris.<br></br> I'm currently building
-                            AI-driven solutions for women's health at Sonio 👩‍🍼
+                            based in Paris.<br></br> I'm currently working at
+                            Sonio, helping to build AI-driven solutions for
+                            women's health 👩‍🍼
                         </Paragraph>
                     ) : (
                         <Paragraph className="hero__para">
                             Je suis Product Manager, Berkeley alumni, et rat de
-                            bibliothèque basée à Paris.<br></br> Je développe
-                            actuellement des solutions basées sur l'IA pour la
-                            santé des femmes chez Sonio 👩‍🍼
+                            bibliothèque basée à Paris.<br></br> Je travaille
+                            actuellement chez Sonio, où j’aide à développer des
+                            solutions basées sur l’IA pour la santé des femmes
+                            👩‍🍼
                         </Paragraph>
                     )}
                     <Paragraph className="hero__stack-heading">
