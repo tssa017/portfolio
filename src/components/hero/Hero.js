@@ -32,7 +32,7 @@ function Hero() {
                             Je suis Product Manager, Berkeley alumni, et rat de
                             bibliothèque basée à Paris.<br></br> Je développe
                             actuellement des solutions basées sur l'IA pour la
-                            santé des femmes chez Sonio.
+                            santé des femmes chez Sonio 👩‍🍼
                         </Paragraph>
                     )}
                     <Paragraph className="hero__stack-heading">
