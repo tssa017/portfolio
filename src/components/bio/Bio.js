@@ -19,8 +19,8 @@ function Bio() {
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? 'Today, I am working as a Product Manager in the Health industry. I help build and co-ordinate AI-driven solutions for fetal ultrasound imaging.'
-                            : "Aujourd'hui, je travaille en tant que Product Manager dans l'industrie de la santé. Je contribue à la création et à la coordination de solutions basées sur l'IA pour l'imagerie échographique fœtale."}
+                            ? 'Today, I am working as a Product Manager in the Health industry. At Sonio, I help build and co-ordinate AI-driven solutions for fetal ultrasound imaging.'
+                            : "Aujourd'hui, je travaille en tant que Product Manager dans l'industrie de la santé. Chez Sonio, je contribue à la création et à la coordination de solutions basées sur l'IA pour l'imagerie échographique fœtale."}
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
