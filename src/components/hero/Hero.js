@@ -9,11 +9,11 @@ function Hero() {
                 <div className="hero" id="hero">
                     {isEnglishClicked ? (
                         <Paragraph className="hero__heading">
-                            Hi! I'm Theressa.
+                            Hi! I'm Theressa 👋
                         </Paragraph>
                     ) : (
                         <Paragraph className="hero__heading">
-                            Salut ! Moi c'est Theressa.
+                            Salut ! Moi c'est Theressa 👋
                         </Paragraph>
                     )}
                     <img
@@ -23,16 +23,16 @@ function Hero() {
                     ></img>
                     {isEnglishClicked ? (
                         <Paragraph className="hero__para">
-                            I'm a Full-Stack dev, Berkeley alum, and bookworm
-                            based in Paris.<br></br> I'm currently working as an
-                            Automations Developer at Captain Data.
+                            I'm a Product Manager, Berkeley alum, and bookworm
+                            based in Paris.<br></br> I'm currently building
+                            AI-driven solutions for women's health at Sonio.
                         </Paragraph>
                     ) : (
                         <Paragraph className="hero__para">
-                            Je suis développeuse Full-Stack, Berkeley alumni, et
-                            rat de bibliothèque basée à Paris.<br></br> Je suis
-                            actuellement en poste de Automations Developer chez
-                            Captain Data.
+                            Je suis Product Manager, Berkeley alumni, et rat de
+                            bibliothèque basée à Paris.<br></br> Je développe
+                            actuellement des solutions basées sur l'IA pour la
+                            santé des femmes chez Sonio.
                         </Paragraph>
                     )}
                     <Paragraph className="hero__stack-heading">
@@ -73,14 +73,16 @@ function Hero() {
                             <li>
                                 <strong>
                                     {isEnglishClicked
-                                        ? 'Ecosystem:'
-                                        : 'Ecosystem :'}
+                                        ? 'Productivity:'
+                                        : 'Outils de productivité :'}
                                 </strong>
                             </li>
                             <li>GitHub / GitLab</li>
-                            <li>Netlify</li>
-                            <li>Vercel</li>
+                            <li>Netlify / Vercel</li>
                             <li>Visual Studio Code</li>
+                            <li>Linear</li>
+                            <li>Figma</li>
+                            <li>Notion</li>
                         </ul>
                     </div>
                 </div>
