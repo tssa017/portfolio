@@ -14,8 +14,8 @@ function Bio() {
                     </h2>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
-                            ? 'While working as an editor, I started teaching myself how to code my literary magazine with HTML and CSS, and soon became hooked! <br></br> After working as a Full-Stack Developer across a variety of small businesses and a big data startup, I I found my ideal role in women’s health. Today, I am a Product Manager at Sonio, where I develop AI solutions for fetal ultrasound imaging.'
-                            : "Pendant que je travaillais en tant que rédacteur, j'ai commencé à m'auto-former à la programmation de mon magazine littéraire avec HTML et CSS, et je suis rapidement devenu passionné ! <br></br> Après avoir travaillé comme développeur Full-Stack pour diverses petites entreprises et une startup de big data, j'ai trouvé mon rôle idéal dans la santé des femmes. Aujourd'hui, je suis Product Manager chez Sonio, où je développe des solutions IA pour l'imagerie échographique fœtale."}
+                            ? 'While working as an editor, I started teaching myself how to code my literary magazine with HTML and CSS, and soon became hooked! <br></br> After working as a Full-Stack dev across a variety of small businesses and a big data startup, I found my ideal role in women’s health. Today, I am a Product Manager at Sonio, where I develop AI solutions for fetal ultrasound imaging.'
+                            : "Pendant que je travaillais en tant que rédacteur, j'ai commencé à m'auto-former à la programmation de mon magazine littéraire avec HTML et CSS, et je suis rapidement devenu passionné ! <br></br> Après avoir travaillé comme développeuse Full-Stack pour diverses petites entreprises et une startup de big data, j'ai trouvé mon rôle idéal dans la santé des femmes. Aujourd'hui, je suis Product Manager chez Sonio, où je développe des solutions IA pour l'imagerie échographique fœtale."}
                     </Paragraph>
                     <Paragraph className="bio__para">
                         {isEnglishClicked
